@@ -1,6 +1,6 @@
 #!/bin/bash -l
 #
-#SBATCH --job-name=HelloWorld_Test
+#SBATCH --job-name=GeneticAlgorithm
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
 #SBATCH --ntasks-per-node=1
@@ -18,12 +18,10 @@ echo $SLURM_NODELIST
 echo "running with OMP_NUM_THREADS= $OMP_NUM_THREADS "
 echo "running with SLURM_TASKS_PER_NODE= $SLURM_TASKS_PER_NODE "
 
-if [ ! -f out.exe ] ; then
-   echo "unable to find decay"
+if [ ! -f GeneticAlgorithm ] ; then
+   echo "unable to find GeneticAlgorithm"
    echo "you probably need to compile code"
    exit 2
 fi
 
-time ./decay >> outputfile.txt
-
-
+time ./GeneticAlgorithm $1 >> outputfile.txt
