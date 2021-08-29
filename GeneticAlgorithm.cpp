@@ -52,7 +52,7 @@ int main(int argc, char *argv[]) {
    }   
    std::cout <<std::endl;
 
-   int f = Fitness(*p);
+   int f = Fitness(p);
    std::cout <<"Fitness: "<<f<<std::endl;
    return 0;
 }
