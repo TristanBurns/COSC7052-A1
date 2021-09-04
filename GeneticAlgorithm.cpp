@@ -3,10 +3,14 @@
 #include <ctime>
 #include <vector>
 
-#define n 128 //Chromosome size
-#define m 128 //Population size
+#define n 8 //Chromosome size
+#define m 8 //Population size
 //#define seed (unsigned)time( NULL )
 #define seed 42
+
+int  p[n][m];
+
+
 
 int * RandomIndividual() {
    static int  r[n];
@@ -20,6 +24,19 @@ int * RandomIndividual() {
    return r;
 }
 
+void RandomPopulation() {
+   
+   std::srand(seed);
+   
+   for(int j = 0; j < m; j++){
+        for (int i = 0; i < n; ++i) {
+            p[i][j] = ((int)std::rand() % 2);
+        }
+    }
+
+   return;
+}
+
 int Fitness(int * individual) {
     int temp = 0;
     for ( int i = 0; i < n; i++ ) {
@@ -27,6 +44,7 @@ int Fitness(int * individual) {
     }  
    return temp;
 }
+
 
 
 int main(int argc, char *argv[]) {
@@ -45,14 +63,28 @@ int main(int argc, char *argv[]) {
     }
     
 
-   int *p = RandomIndividual();
+   int *a = RandomIndividual();
    
    for ( int i = 0; i < n; i++ ) {
-        std::cout << *(p + i);
+        std::cout << *(a + i);
    }   
    std::cout <<std::endl;
 
-   int f = Fitness(p);
+   int f = Fitness(a);
    std::cout <<"Fitness: "<<f<<std::endl;
+
+
+    RandomPopulation();
+   for (int j = 0; j < m; j++ ) {
+        for ( int i = 0; i < n; i++ ) {
+            std::cout << p[i][j];
+        }   
+        std::cout <<std::endl;
+   }
+
+
+   f = Fitness(*(p+7));
+   std::cout <<"Fitness: "<<f<<std::endl;
+
    return 0;
 }
