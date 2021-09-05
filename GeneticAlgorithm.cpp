@@ -3,11 +3,11 @@
 #include <ctime>
 #include <vector>
 
-#define n 128 //Chromosome size
-#define m 8 //Population size
-#define seed 42 //#define seed (unsigned)time( NULL )
+#define n 128        //Chromosome size
+#define m 32          //Population size
+#define seed 42      //#define seed (unsigned)time( NULL )
 #define maxloops 100 //While Loop limit
-#define t 2 // Tournament size
+#define t 2          // Tournament size
 int p[m][n];
 int q[m][n];
 
@@ -102,7 +102,7 @@ int TournamentSelection(int tsize)
             fitnbest = fitnrand;
         }
     }
-return besti;
+    return besti;
 }
 
 void CrossoverVerbose()
@@ -193,29 +193,35 @@ void Mutate()
 {
     int c;
     int mu;
+    bool mutated;
 
     std::cout << "\nRunning Mutate (Verbose)\n"
               << std::endl;
 
     for (int i = 0; i < m; i++)
     {
+        mutated = false;
         std::cout << "Child: " << i << " | ";
-
-        mu = (std::rand() % n);
-        if (mu == 0)
-        {
-            c = (std::rand() % n);
-            q[i][c] = 1 - q[i][c];
-        }
 
         for (int j = 0; j < n; j++)
         {
+            mu = (std::rand() % n);
+            if (mu == 0)
+            {
+                q[i][j] = 1 - q[i][j];
+                mutated = true;
+                c = j;
+            }
+
             std::cout << q[i][j];
+            
         }
-        if (mu == 0)
+        
+        if (mutated)
         {
             std::cout << "* Mutation at chromosome " << c << std::endl;
         }
+
         else
         {
             std::cout << std::endl;
@@ -306,7 +312,7 @@ int main(int argc, char *argv[])
     int loops = 0;
     std::cout << "Initial Fittest Individual:" << bestfinti << ", Fitness: " << bestfitn << std::endl;
 
-    while ((bestfitn!=n)&&(loops<maxloops))
+    while ((bestfitn != n) && (loops < maxloops))
     {
         CrossoverVerbose();
         Mutate();
