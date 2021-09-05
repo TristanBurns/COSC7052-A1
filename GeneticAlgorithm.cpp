@@ -2,32 +2,20 @@
 #include <chrono>
 #include <ctime>
 #include <vector>
+#include "functions.h"
 
-#define n 128        //Chromosome size
-#define m 32          //Population size
+#define n 16        //Chromosome size
+#define m 8          //Population size
 #define seed 42      //#define seed (unsigned)time( NULL )
 #define maxloops 100 //While Loop limit
 #define t 2          // Tournament size
 int p[m][n];
 int q[m][n];
+int f[maxloops];
 
-int *RandomIndividual()
-{
-    static int r[n];
-
-    std::srand(seed);
-
-    for (int i = 0; i < n; ++i)
-    {
-        r[i] = ((int)std::rand() % 2);
-    }
-
-    return r;
-}
 
 void RandomPopulation()
 {
-
     std::srand(seed);
 
     for (int i = 0; i < m; i++)
@@ -37,27 +25,15 @@ void RandomPopulation()
             p[i][j] = ((int)std::rand() % 2);
         }
     }
-
     return;
 }
 
-//NB Test whether fitness or individual fitness is faster/the same.
-int Fitness(int *individual)
-{
-    int temp = 0;
-    for (int i = 0; i < n; i++)
-    {
-        temp += *(individual + i);
-    }
-    return temp;
-}
-
-int IndividualFitness(int individual)
+int IndividualFitness(int i)
 {
     int temp = 0;
     for (int j = 0; j < n; j++)
     {
-        temp += p[individual][j];
+        temp += p[i][j];
     }
     return temp;
 }
@@ -254,6 +230,7 @@ void NextGeneration(int verbose)
     }
 }
 
+
 int main(int argc, char *argv[])
 {
     bool verbose = false;
@@ -277,17 +254,7 @@ int main(int argc, char *argv[])
                   << std::endl;
     }
 
-    int *a = RandomIndividual();
-
-    for (int i = 0; i < n; i++)
-    {
-        std::cout << *(a + i);
-    }
-    std::cout << std::endl;
-
-    int f = Fitness(a);
-    std::cout << "Fitness: " << f << std::endl;
-
+    
     RandomPopulation();
 
     if (verbose == true)
@@ -303,27 +270,24 @@ int main(int argc, char *argv[])
         }
     }
 
-    f = IndividualFitness(5);
-    f = Fitness(*(p + 5));
-    std::cout << "Fitness 5: " << f << std::endl;
-
-    int bestfinti = AssessFitness();
-    int bestfitn = IndividualFitness(bestfinti);
+   
+    int besti = AssessFitness();
+    int best = IndividualFitness(besti);
     int loops = 0;
-    std::cout << "Initial Fittest Individual:" << bestfinti << ", Fitness: " << bestfitn << std::endl;
+    std::cout << "Initial Fittest Individual:" << besti << ", Fitness: " << best << std::endl;
 
-    while ((bestfitn != n) && (loops < maxloops))
+    while ((best != n) && (loops < maxloops))
     {
         CrossoverVerbose();
         Mutate();
         NextGeneration(verbose);
-        bestfinti = AssessFitness();
-        bestfitn = IndividualFitness(bestfinti);
+        besti = AssessFitness();
+        best = IndividualFitness(besti);
         if (verbose == true)
         {
-            std::cout << "Fittest Individual:" << bestfinti << ", Fitness: " << bestfitn << std::endl;
+            std::cout << "Fittest Individual:" << besti << ", Fitness: " << best << std::endl;
         }
-        std::cout << "Loop: " << loops << ", Fitness: " << bestfitn << std::endl;
+        std::cout << "Loop: " << loops << ", Fitness: " << best << std::endl;
         loops++;
     }
 
