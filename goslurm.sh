@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=1G # memory (MB)
-#SBATCH --time=0-00:02 # time (D-HH:MM)
+#SBATCH --time=0-00:01 # time (D-HH:MM)
 
 
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}

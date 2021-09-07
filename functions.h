@@ -8,5 +8,10 @@ int MaxFitness(int *p, int n, int m);
 int IndividualFitness( int i, int *p, int n, int m);
 int TournamentSelection(int tsize, int *p, int n, int m);
 void CrossoverVerbose(int t, int *p, int *q, int n, int m);
+void Crossover(int t, int *p, int *q, int n, int m);
+void MutateVerbose(int *q, int n, int m);
+void Mutate(int *q, int n, int m);
+void NextGenerationVerbose(int *p, int *q, int n, int m);
+void NextGeneration(int *p, int *q, int n, int m);
 
 #endif

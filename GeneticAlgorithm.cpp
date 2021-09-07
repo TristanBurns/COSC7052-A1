@@ -5,7 +5,7 @@
 #include "functions.h"
 
 #define n 16        //Chromosome size
-#define m 8          //Population size
+#define m 32          //Population size
 #define seed 42      //#define seed (unsigned)time( NULL )
 #define maxloops 100 //While Loop limit
 #define t 2          // Tournament size

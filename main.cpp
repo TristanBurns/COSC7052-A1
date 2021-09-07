@@ -4,33 +4,32 @@
 #include <vector>
 #include "functions.h"
 
-#define n 16        //Chromosome size
-#define m 8          //Population size
-#define seed 42         //#define seed (unsigned)time( NULL )
-#define maxloops 100 //While Loop limit
-#define t 2          // Tournament size
+#define n 16               // Chromosome size
+#define m 8               // Population size
+#define seed 42            // #define seed (unsigned)time( NULL )
+#define maxgenerations 200 // Maximum number of generations (while Loop limit)
+#define t 2                // Tournament size
 int p[m][n];
 int q[m][n];
-int f[maxloops];  
-    
+int fitness[maxgenerations];
+int best;
+int generation;
 
-
-int main(int argc, char *argv[]){
+int main(int argc, char *argv[])
+{
     std::srand(seed);
-    RandomPopulationVerbose((int *)p,n,m);
-    std::cout << " --------------------------" << std::endl;
+    generation = 0;
+    RandomPopulationVerbose((int *)p, n, m);
+ 
 
-    // for (int i = 0; i < m; i++)
-    // {
-    //     for (int j = 0; j < n; j++)
-    //     {
-    //         std::cout << p[i][j];
-    //     }
-    //     std::cout << " -> Individual: " << i << std::endl;
-    // }
-    // std::cout << " --------------------------" << std::endl;
-
-
-    f[0] = MaxFitnessVerbose((int *)p, n, m);
-    CrossoverVerbose(t, (int *)p, (int *)q, n, m);
+    while ((best != n) && (generation < maxgenerations))
+    {
+        fitness[generation] = MaxFitness((int *)p, n, m);
+        std::cout << " ------------ Generation: " << generation << " Best Fitness: "<< fitness[generation] <<" --------------" << std::endl;
+        best = fitness[generation];
+        CrossoverVerbose(t, (int *)p, (int *)q, n, m);
+        MutateVerbose((int *)q, n, m);
+        NextGenerationVerbose((int *)p, (int *)q, n, m);
+        generation++;
+    }
 }
