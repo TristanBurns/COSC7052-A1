@@ -1,18 +1,16 @@
 #include <iostream>
-#include <chrono>
-#include <ctime>
-#include <vector>
-#include <unistd.h>
 #include <stdlib.h>
+#include <chrono>
 
 #include "functions.h"
 
-#define n 1000               // Chromosome size
-#define m 100                // Population size
-#define seed 42            // #define seed (unsigned)time( NULL )
-#define maxgenerations 1000 // Maximum number of generations (while Loop limit)
-#define t 2                // Tournament size
-bool useseed = true;
+#define n 1024               // Chromosome size
+#define m 100               // Population size
+#define seed 42              // #define seed
+#define maxgenerations 2000  // Maximum number of generations (while Loop limit)
+#define t 2                  // Tournament size
+
+
 bool verbose = false;
 bool printfitness = true;
 
@@ -23,14 +21,14 @@ int best;
 int generation = 0;
 int fitness[maxgenerations];
 
+
 int main(int argc, char *argv[])
 {
-
-    if (useseed)
-    {
-        std::srand(seed);
-    }
-
+    auto start = std::chrono::high_resolution_clock::now();
+    int seed_rand = time(NULL);
+    std::cout << seed_rand << std::endl;
+    std::srand(seed_rand);
+  
     if (verbose)
     {
         RandomPopulationVerbose((int *)p, n, m);
@@ -72,5 +70,8 @@ int main(int argc, char *argv[])
     {
         PrintFitness(fitness,  generation);
     }
+    auto stop = std::chrono::high_resolution_clock::now();
+    auto duration = std::chrono::duration_cast<std::chrono::microseconds>(stop - start).count();
+    std::cout << "Runtime (microseconds): "<< duration << std::endl;
     return 0;
 }

@@ -24,5 +24,14 @@ if [ ! -f GeneticAlgorithm ] ; then
    exit 2
 fi
 
-time ./GeneticAlgorithm $1 $2 $3 $4 $5 $6 >> outputfile.txt
- 
+time ./GeneticAlgorithm >> outputfile0.txt
+time ./GeneticAlgorithm >> outputfile1.txt 
+time ./GeneticAlgorithm >> outputfile2.txt
+time ./GeneticAlgorithm >> outputfile3.txt
+time ./GeneticAlgorithm >> outputfile4.txt
+time ./GeneticAlgorithm >> outputfile5.txt
+time ./GeneticAlgorithm >> outputfile6.txt
+time ./GeneticAlgorithm >> outputfile7.txt
+time ./GeneticAlgorithm >> outputfile8.txt
+time ./GeneticAlgorithm >> outputfile9.txt
+time ./GeneticAlgorithm >> outputfile10.txt

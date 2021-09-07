@@ -4,3 +4,5 @@
 
 Plot Mode sbatch goslurm.sh p
 Verbose Mode sbatch goslurm.sh v
+
+gprof GeneticAlgorithm gmon.out > analysis.txt

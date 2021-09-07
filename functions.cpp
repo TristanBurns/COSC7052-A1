@@ -1,44 +1,11 @@
 #include "functions.h"
 #include <iostream>
-#include <unistd.h>
+
 
 #define p(I, J) *((p + (I)*n) + (J))
 #define q(I, J) *((q + (I)*n) + (J))
-// #define fitness(J) *(fitness + (J))
 
-GenAlgParams ParseArguments(int argc, char *argv[])
-{
-    int opts;
-    GenAlgParams params;
-    while ((opts = getopt(argc, argv, "vn:m:s:")) != -1)
-    {
-        switch (opts)
-        {
-        case 'v':
-            params.verbose = true;
-            break;
-        case 'n':
-            params.n = atoi(optarg);
-            std::cout << "n = " << params.n << std::endl;
-            break;
-        case 'm':
-            params.m = atoi(optarg);
-            std::cout << "m = " << params.m << std::endl;
-            break;
-        case 's':
-            params.useseed = true;
-            params.seed = atoi(optarg);
-            std::cout << "seed = " << params.seed << std::endl;
-            break;
-        case '?':
-            std::cout << "Unknown Arugment Error";
-            break;
-        default:
-            abort();
-        }
-    }
-    return params;
-}
+
 
 void RandomPopulationVerbose(int *p, int n, int m)
 {
@@ -332,6 +299,8 @@ void Mutate(int *q, int n, int m)
     }
     return;
 }
+
+
 
 void NextGenerationVerbose(int *p, int *q, int n, int m)
 {
