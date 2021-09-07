@@ -1,7 +1,44 @@
 #include "functions.h"
 #include <iostream>
-#define p(I, J) *((p + (I) * n) + (J))
-#define q(I, J) *((q + (I) * n) + (J))
+#include <unistd.h>
+
+#define p(I, J) *((p + (I)*n) + (J))
+#define q(I, J) *((q + (I)*n) + (J))
+// #define fitness(J) *(fitness + (J))
+
+GenAlgParams ParseArguments(int argc, char *argv[])
+{
+    int opts;
+    GenAlgParams params;
+    while ((opts = getopt(argc, argv, "vn:m:s:")) != -1)
+    {
+        switch (opts)
+        {
+        case 'v':
+            params.verbose = true;
+            break;
+        case 'n':
+            params.n = atoi(optarg);
+            std::cout << "n = " << params.n << std::endl;
+            break;
+        case 'm':
+            params.m = atoi(optarg);
+            std::cout << "m = " << params.m << std::endl;
+            break;
+        case 's':
+            params.useseed = true;
+            params.seed = atoi(optarg);
+            std::cout << "seed = " << params.seed << std::endl;
+            break;
+        case '?':
+            std::cout << "Unknown Arugment Error";
+            break;
+        default:
+            abort();
+        }
+    }
+    return params;
+}
 
 void RandomPopulationVerbose(int *p, int n, int m)
 {
@@ -114,7 +151,7 @@ void CrossoverVerbose(int t, int *p, int *q, int n, int m)
     int c = 0;
     int individual1;
     int individual2;
-    std::cout << "Running Crossover (Verbose)"<< std::endl;
+    std::cout << "Running Crossover (Verbose)" << std::endl;
     for (int i = 0; i < m; i += 2)
     {
         c = (std::rand() % n);
@@ -205,6 +242,7 @@ void Crossover(int t, int *p, int *q, int n, int m)
     int c = 0;
     int individual1;
     int individual2;
+
     for (int i = 0; i < m; i += 2)
     {
         c = (std::rand() % n);
@@ -229,9 +267,9 @@ void Crossover(int t, int *p, int *q, int n, int m)
             // *((q+(i+1)*n)+j) = *((p+individual1*n)+j);
             q(i + 1, j) = p(individual1, j);
         }
-
-        return;
     }
+
+    return;
 }
 
 void MutateVerbose(int *q, int n, int m)
@@ -281,14 +319,16 @@ void Mutate(int *q, int n, int m)
 
     for (int i = 0; i < m; i++)
     {
+
         for (int j = 0; j < n; j++)
         {
             mu = (std::rand() % n);
             if (mu == 0)
             {
-                q(i, j) = 1 - q(i, j);
+                (q(i, j)) = 1 - (q(i, j));
             }
         }
+
     }
     return;
 }
@@ -300,8 +340,9 @@ void NextGenerationVerbose(int *p, int *q, int n, int m)
     {
         for (int j = 0; j < n; j++)
         {
-            p(i,j) = q(i,j);
-            std::cout << p(i,j);
+            std::cout << q(i, j);
+            p(i, j) = q(i, j);
+            //std::cout << p(i,j);
         }
         std::cout << " | Fitness: " << IndividualFitness(i, p, n, m) << std::endl;
     }
@@ -313,8 +354,19 @@ void NextGeneration(int *p, int *q, int n, int m)
     {
         for (int j = 0; j < n; j++)
         {
-            p(i,j) = q(i,j);
+            p(i, j) = q(i, j);
+            // p(i,j) = q(i, j, n);
         }
     }
+}
 
+void PrintFitness(int fitness[], int generation)
+{
+    std::cout << "Generation"
+              << ","
+              << "Best Fitness" << std::endl;
+    for (int i = 0; i < (generation + 1); i++)
+    {
+        std::cout << i << "," << fitness[i] << std::endl;
+    }
 }

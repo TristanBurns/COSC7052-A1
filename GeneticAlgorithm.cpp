@@ -7,7 +7,7 @@
 #define n 16        //Chromosome size
 #define m 32          //Population size
 #define seed 42      //#define seed (unsigned)time( NULL )
-#define maxloops 100 //While Loop limit
+#define maxloops 1000 //While Loop limit
 #define t 2          // Tournament size
 int p[m][n];
 int q[m][n];

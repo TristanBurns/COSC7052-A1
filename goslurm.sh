@@ -24,5 +24,5 @@ if [ ! -f GeneticAlgorithm ] ; then
    exit 2
 fi
 
-time ./GeneticAlgorithm $1 >> outputfile.txt
+time ./GeneticAlgorithm $1 $2 $3 $4 $5 $6 >> outputfile.txt
  

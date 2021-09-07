@@ -1,6 +1,16 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+
+struct GenAlgParams {
+    bool verbose;
+    int n;
+    int m;
+    bool useseed;
+    int seed;
+};
+
+GenAlgParams ParseArguments(int argc, char *argv[]);
 void RandomPopulationVerbose(int *p, int n, int m);
 void RandomPopulation(int *p, int n, int m);
 int MaxFitnessVerbose(int *p, int n, int m);
@@ -13,5 +23,7 @@ void MutateVerbose(int *q, int n, int m);
 void Mutate(int *q, int n, int m);
 void NextGenerationVerbose(int *p, int *q, int n, int m);
 void NextGeneration(int *p, int *q, int n, int m);
+void PrintFitness(int fitness[], int generation);
+
 
 #endif
