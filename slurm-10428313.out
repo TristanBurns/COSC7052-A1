@@ -1,0 +1,10 @@
+running with OMP_NUM_THREADS = 1
+running with MKL_NUM_THREADS = 1
+This is job 'GeneticAlgorithm' (id: 10428313) running on the following nodes:
+smp-0-21
+running with OMP_NUM_THREADS= 1 
+running with SLURM_TASKS_PER_NODE= 1 
+
+real	0m0.873s
+user	0m0.769s
+sys	0m0.002s

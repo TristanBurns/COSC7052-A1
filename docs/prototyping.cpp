@@ -179,3 +179,13 @@ struct GenAlgParams {
 };
 
 GenAlgParams ParseArguments(int argc, char *argv[]);
+
+struct GenAlgParams {
+    bool verbose;
+    int n;
+    int m;
+    bool useseed;
+    int seed;
+};
+
+GenAlgParams ParseArguments(int argc, char *argv[]);

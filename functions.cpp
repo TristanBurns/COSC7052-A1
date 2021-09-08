@@ -1,13 +1,16 @@
 #include "functions.h"
 #include <iostream>
 
-
+// Macros for array pointer indexing.
 #define p(I, J) *((p + (I)*n) + (J))
 #define q(I, J) *((q + (I)*n) + (J))
 
 
-
 void RandomPopulationVerbose(int *p, int n, int m)
+/*
+Fill static 2d int array at pointer *p with m indivduals with n
+chromosmomes, gene values 0 or 1 (verbose cout).
+*/
 {
     for (int i = 0; i < m; i++)
     {
@@ -16,12 +19,16 @@ void RandomPopulationVerbose(int *p, int n, int m)
             p(i, j) = ((int)std::rand() % 2);
             std::cout << p(i, j);
         }
-        std::cout << " -> Individual: " << i << std::endl;
+        std::cout << " -> Individual " << i << std::endl;
     }
     return;
 }
 
 void RandomPopulation(int *p, int n, int m)
+/*
+Fill static 2d int array at pointer *p with m indivduals with n
+chromosmomes, gene values 0 or 1.
+*/
 {
     for (int i = 0; i < m; i++)
     {
@@ -34,11 +41,15 @@ void RandomPopulation(int *p, int n, int m)
 }
 
 int MaxFitnessVerbose(int *p, int n, int m)
+/*
+Return integer of best (highest) fitness for the pointer *p with m indivduals with n
+chromosmomes. Fitness is defined as the sum of the individuals chromosomes (verbose cout).
+*/
 {
     int best = 0;
     int besti = 0;
     int sum = 0;
-
+    std::cout << "Running MaxFitness (Verbose)" << std::endl;
     for (int i = 0; i < m; i++)
     {
         sum = 0;
@@ -47,7 +58,7 @@ int MaxFitnessVerbose(int *p, int n, int m)
             std::cout << p(i, j);
             sum += p(i, j);
         }
-        std::cout << " -> Individual: " << i << ", Fitness: " << sum << std::endl;
+        std::cout << " -> Individual " << i << ", Fitness: " << sum << std::endl;
 
         if (sum > best)
         {
@@ -55,11 +66,14 @@ int MaxFitnessVerbose(int *p, int n, int m)
             besti = i;
         }
     }
-    std::cout << "Initial Fittest Individual:" << besti << ", Fitness: " << best << std::endl;
     return best;
 }
 
 int MaxFitness(int *p, int n, int m)
+/*
+Return integer of best (highest) fitness for the pointer *p with m indivduals with n
+chromosmomes. Fitness is defined as the sum of the individuals chromosomes.
+*/
 {
     int best = 0;
     int sum = 0;
@@ -81,6 +95,10 @@ int MaxFitness(int *p, int n, int m)
 }
 
 int IndividualFitness(int i, int *p, int n, int m)
+/*
+Return integer fitness for the individual i in population array *p with m indivduals with n
+chromosmomes. Fitness is defined as the sum of the individuals chromosomes.
+*/
 {
     int sum = 0;
     for (int j = 0; j < n; j++)
@@ -91,6 +109,11 @@ int IndividualFitness(int i, int *p, int n, int m)
 }
 
 int TournamentSelection(int tsize, int *p, int n, int m)
+/*
+Perform tsize torunament selection on population at array *p with m indivduals with n
+chromosmomes. Randomly sample with replacement tsize individuals and return integer
+index of individual with highest fitness sampled. 
+*/
 {
     int sumi;
     int sum;
@@ -114,6 +137,10 @@ int TournamentSelection(int tsize, int *p, int n, int m)
 }
 
 void CrossoverVerbose(int t, int *p, int *q, int n, int m)
+/*
+Perform single point crossover on parents from tournament selection of size t from population array *p.
+Fill array *q with childeren from single point crossover (verbose cout).
+*/
 {
     int c = 0;
     int individual1;
@@ -126,21 +153,13 @@ void CrossoverVerbose(int t, int *p, int *q, int n, int m)
         individual2 = TournamentSelection(t, p, n, m);
         for (int j = 0; j < c; j++)
         {
-            // q[i][j] = p[individual1][j];
-            // *((q+i*n)+j) = *((p+individual1*n)+j);
             q(i, j) = p(individual1, j);
-            // q[i + 1][j] = p[individual2][j];
-            // *((q+(i+1)*n)+j) = *((p+individual2*n)+j);
             q(i + 1, j) = p(individual2, j);
         }
 
         for (int j = c; j < n; j++)
         {
-            // q[i][j] = p[individual2][j];
-            // *((q+i*n)+j) = *((p+individual2*n)+j);
             q(i, j) = p(individual2, j);
-            // q[i + 1][j] = p[individual1][j];
-            // *((q+(i+1)*n)+j) = *((p+individual1*n)+j);
             q(i + 1, j) = p(individual1, j);
         }
 
@@ -157,7 +176,7 @@ void CrossoverVerbose(int t, int *p, int *q, int n, int m)
                 std::cout << p(individual1, j);
             }
         }
-        std::cout << " -> Parent 1 (Individual = " << individual1 << ")";
+        std::cout << " -> Parent 1 (Individual " << individual1 << ")";
         std::cout << std::endl;
         for (int j = 0; j < n; j++)
         {
@@ -170,7 +189,7 @@ void CrossoverVerbose(int t, int *p, int *q, int n, int m)
                 std::cout << p(individual2, j);
             }
         }
-        std::cout << " -> Parent 2 (Individual = " << individual2 << ")";
+        std::cout << " -> Parent 2 (Individual " << individual2 << ")";
         std::cout << std::endl;
 
         for (int j = 0; j < n; j++)
@@ -184,7 +203,7 @@ void CrossoverVerbose(int t, int *p, int *q, int n, int m)
                 std::cout << q(i, j);
             }
         }
-        std::cout << " -> Child (i = " << i << "): ";
+        std::cout << " -> Child " << i ;
         std::cout << std::endl;
 
         for (int j = 0; j < n; j++)
@@ -198,13 +217,17 @@ void CrossoverVerbose(int t, int *p, int *q, int n, int m)
                 std::cout << q(i + 1, j);
             }
         }
-        std::cout << " -> Child (i = " << i + 1 << "): ";
+        std::cout << " -> Child " << i + 1 ;
         std::cout << std::endl;
     }
     return;
 }
 
 void Crossover(int t, int *p, int *q, int n, int m)
+/*
+Perform single point crossover on parents from tournament selection of size t from population array *p.
+Fill array *q with childeren from single point crossover.
+*/
 {
     int c = 0;
     int individual1;
@@ -217,21 +240,13 @@ void Crossover(int t, int *p, int *q, int n, int m)
         individual2 = TournamentSelection(t, p, n, m);
         for (int j = 0; j < c; j++)
         {
-            // q[i][j] = p[individual1][j];
-            // *((q+i*n)+j) = *((p+individual1*n)+j);
             q(i, j) = p(individual1, j);
-            // q[i + 1][j] = p[individual2][j];
-            // *((q+(i+1)*n)+j) = *((p+individual2*n)+j);
             q(i + 1, j) = p(individual2, j);
         }
 
         for (int j = c; j < n; j++)
         {
-            // q[i][j] = p[individual2][j];
-            // *((q+i*n)+j) = *((p+individual2*n)+j);
             q(i, j) = p(individual2, j);
-            // q[i + 1][j] = p[individual1][j];
-            // *((q+(i+1)*n)+j) = *((p+individual1*n)+j);
             q(i + 1, j) = p(individual1, j);
         }
     }
@@ -240,6 +255,11 @@ void Crossover(int t, int *p, int *q, int n, int m)
 }
 
 void MutateVerbose(int *q, int n, int m)
+/*
+Perform random bit flip mutation on individuals in array *q of m individuals
+with chromosome length n.  Each chromosome has a probablility 1/n of having a 
+bitflip mutation applied (verbose cout).
+*/
 {
     int c;
     int mu;
@@ -269,7 +289,7 @@ void MutateVerbose(int *q, int n, int m)
 
         if (mutated)
         {
-            std::cout << "-> Child " << i << " Mutation at chromosome(s) *_* " << std::endl;
+            std::cout << "-> Child " << i << " Mutation at *_* " << std::endl;
         }
 
         else
@@ -281,6 +301,11 @@ void MutateVerbose(int *q, int n, int m)
 }
 
 void Mutate(int *q, int n, int m)
+/*
+Perform random bit flip mutation on individuals in array *q of m individuals
+with chromosome length n.  Each chromosome has a probablility 1/n of having a 
+bitflip mutation applied (verbose cout).
+*/
 {
     int mu;
 
@@ -303,6 +328,9 @@ void Mutate(int *q, int n, int m)
 
 
 void NextGenerationVerbose(int *p, int *q, int n, int m)
+/*
+Assign children in array *q to population in array *p for next generation (verbose cout).
+*/
 {
     std::cout << "Assigning next generation (Verbose)" << std::endl;
     for (int i = 0; i < m; i++)
@@ -311,25 +339,29 @@ void NextGenerationVerbose(int *p, int *q, int n, int m)
         {
             std::cout << q(i, j);
             p(i, j) = q(i, j);
-            //std::cout << p(i,j);
         }
-        std::cout << " | Fitness: " << IndividualFitness(i, p, n, m) << std::endl;
+        std::cout <<" -> Child " << i << " to Individual " << i << ", Fitness: " << IndividualFitness(i, p, n, m) << std::endl;
     }
 }
 
 void NextGeneration(int *p, int *q, int n, int m)
+/*
+Assign children in array *q to population in array *p for next generation.
+*/
 {
     for (int i = 0; i < m; i++)
     {
         for (int j = 0; j < n; j++)
         {
             p(i, j) = q(i, j);
-            // p(i,j) = q(i, j, n);
         }
     }
 }
 
 void PrintFitness(int fitness[], int generation)
+/*
+Print (cout) array comma separated values for generation and best (maximum) fitness.
+*/
 {
     std::cout << "Generation"
               << ","

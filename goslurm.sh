@@ -6,7 +6,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem-per-cpu=1G # memory (MB)
-#SBATCH --time=0-00:01 # time (D-HH:MM)
+#SBATCH --time=0-00:02 # time (D-HH:MM)
 
 
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK}
@@ -24,14 +24,4 @@ if [ ! -f GeneticAlgorithm ] ; then
    exit 2
 fi
 
-time ./GeneticAlgorithm >> outputfile0.txt
-time ./GeneticAlgorithm >> outputfile1.txt 
-time ./GeneticAlgorithm >> outputfile2.txt
-time ./GeneticAlgorithm >> outputfile3.txt
-time ./GeneticAlgorithm >> outputfile4.txt
-time ./GeneticAlgorithm >> outputfile5.txt
-time ./GeneticAlgorithm >> outputfile6.txt
-time ./GeneticAlgorithm >> outputfile7.txt
-time ./GeneticAlgorithm >> outputfile8.txt
-time ./GeneticAlgorithm >> outputfile9.txt
-time ./GeneticAlgorithm >> outputfile10.txt
+time ./GeneticAlgorithm >> outputfile.txt

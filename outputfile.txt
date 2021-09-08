@@ -1,0 +1,1947 @@
+Running MaxFitness (Verbose)
+0011001011011000 -> Individual 0, Fitness: 7
+0001101111101011 -> Individual 1, Fitness: 10
+0000011011101111 -> Individual 2, Fitness: 9
+0101010111101110 -> Individual 3, Fitness: 10
+1100010101010110 -> Individual 4, Fitness: 8
+0110111001000101 -> Individual 5, Fitness: 8
+0010010000011111 -> Individual 6, Fitness: 7
+0101011101100100 -> Individual 7, Fitness: 8
+ ------------ Generation: 0 Best Fitness: 10 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 7:
+0001101|111101011 -> Parent 1 (Individual 1)
+0110111|001000101 -> Parent 2 (Individual 5)
+0001101|001000101 -> Child 0
+0110111|111101011 -> Child 1
+Crossover at chromosome 7:
+0110111|001000101 -> Parent 1 (Individual 5)
+1100010|101010110 -> Parent 2 (Individual 4)
+0110111|101010110 -> Child 2
+1100010|101000101 -> Child 3
+Crossover at chromosome 15:
+000110111110101|1 -> Parent 1 (Individual 1)
+010101011110111|0 -> Parent 2 (Individual 3)
+000110111110101|0 -> Child 4
+010101011110111|1 -> Child 5
+Crossover at chromosome 0:
+|0001101111101011 -> Parent 1 (Individual 1)
+|0001101111101011 -> Parent 2 (Individual 1)
+|0001101111101011 -> Child 6
+|0001101111101011 -> Child 7
+Running Mutate (Verbose)
+ 0  0  0  1  1  0  1 *1* 0  1  0  0  0 *0* 0  1 -> Child 0 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  1  0  1  1 
+ 0  1  1  0  1  1  1  1 *1* 1  0  1  0  1  1  0 -> Child 2 Mutation at *_* 
+ 1 *0* 0  0  0  1  0  0  0  1 *1* 0  0  1  0  1 -> Child 3 Mutation at *_* 
+ 0  0  0  1  1  0 *0* 1  1  1  1  0  1  0  1  0 -> Child 4 Mutation at *_* 
+ 0  1  0  1  0  1  0  1  1  1  1  0  1  1  1  1 
+ 0  0  0  1  1  0  1  1  1  1  1  0  1  0  1  1 
+ 0  0  0  1  1  0  1  1  1  1  1  0  1  0  1  1 
+Assigning next generation (Verbose)
+0001101101000001 -> Child 0 to Individual 0, Fitness: 6
+0110111111101011 -> Child 1 to Individual 1, Fitness: 12
+0110111111010110 -> Child 2 to Individual 2, Fitness: 11
+1000010001100101 -> Child 3 to Individual 3, Fitness: 6
+0001100111101010 -> Child 4 to Individual 4, Fitness: 8
+0101010111101111 -> Child 5 to Individual 5, Fitness: 11
+0001101111101011 -> Child 6 to Individual 6, Fitness: 10
+0001101111101011 -> Child 7 to Individual 7, Fitness: 10
+ ------------ Generation: 1 Best Fitness: 12 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 10:
+0110111111|101011 -> Parent 1 (Individual 1)
+0101010111|101111 -> Parent 2 (Individual 5)
+0110111111|101111 -> Child 0
+0101010111|101011 -> Child 1
+Crossover at chromosome 14:
+01101111110101|10 -> Parent 1 (Individual 2)
+00011001111010|10 -> Parent 2 (Individual 4)
+01101111110101|10 -> Child 2
+00011001111010|10 -> Child 3
+Crossover at chromosome 11:
+01101111110|10110 -> Parent 1 (Individual 2)
+00011011111|01011 -> Parent 2 (Individual 7)
+01101111110|01011 -> Child 4
+00011011111|00110 -> Child 5
+Crossover at chromosome 14:
+01010101111011|11 -> Parent 1 (Individual 5)
+01101111110101|10 -> Parent 2 (Individual 2)
+01010101111011|10 -> Child 6
+01101111110101|11 -> Child 7
+Running Mutate (Verbose)
+ 0  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 0  1  0  1  0  1  0  1  1  1  1  0 *0* 0  1  1 -> Child 1 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  1  0  1  1  0 
+ 0  0  0  1  1  0  0 *0* 1  1  1  0  1  0  1 *1*-> Child 3 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  0  1  0  1  1 
+ 0  0  0  1  1  0  1  1  1  1  1  1  0  1  1 *1*-> Child 5 Mutation at *_* 
+ 0  1  0  1  0  1  0  1  1  1  1  0 *0* 1  1  0 -> Child 6 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1 *0* 0  1  0  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0110111111101111 -> Child 0 to Individual 0, Fitness: 13
+0101010111100011 -> Child 1 to Individual 1, Fitness: 9
+0110111111010110 -> Child 2 to Individual 2, Fitness: 11
+0001100011101011 -> Child 3 to Individual 3, Fitness: 8
+0110111111001011 -> Child 4 to Individual 4, Fitness: 11
+0001101111110111 -> Child 5 to Individual 5, Fitness: 11
+0101010111100110 -> Child 6 to Individual 6, Fitness: 9
+0110111110010111 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 2 Best Fitness: 13 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 9:
+011011111|1010110 -> Parent 1 (Individual 2)
+011011111|1001011 -> Parent 2 (Individual 4)
+011011111|1001011 -> Child 0
+011011111|1010110 -> Child 1
+Crossover at chromosome 15:
+011011111110111|1 -> Parent 1 (Individual 0)
+011011111100101|1 -> Parent 2 (Individual 4)
+011011111110111|1 -> Child 2
+011011111100101|0 -> Child 3
+Crossover at chromosome 9:
+011011111|1001011 -> Parent 1 (Individual 4)
+011011111|1101111 -> Parent 2 (Individual 0)
+011011111|1101111 -> Child 4
+011011111|1001011 -> Child 5
+Crossover at chromosome 0:
+|0110111111101111 -> Parent 1 (Individual 0)
+|0110111111001011 -> Parent 2 (Individual 4)
+|0110111111001011 -> Child 6
+|0110111111101111 -> Child 7
+Running Mutate (Verbose)
+ 0  1 *0* 0  1  1  1  1  1  1  0  0  1  0  1  1 -> Child 0 Mutation at *_* 
+ 0  1  1  0  1  1 *0* 1  1  1  0  1  0  1  1  0 -> Child 1 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0 *0* 1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  0  1  0  1  1 
+ 0  1  1  0  1  1  1 *0* 1  1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 0 *0* 1  0  1  1  1 *0* 1  1  0 *1* 1  0  1  1 -> Child 5 Mutation at *_* 
+ 0  1  1  0  1  1  1 *0* 1  1 *1* 0  1  0  1  1 -> Child 6 Mutation at *_* 
+ 0 *0**0**1* 1  1 *0* 1  1  1  1  0  1  1  1 *0*-> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0100111111001011 -> Child 0 to Individual 0, Fitness: 10
+0110110111010110 -> Child 1 to Individual 1, Fitness: 10
+0110111111100111 -> Child 2 to Individual 2, Fitness: 12
+0110111111001011 -> Child 3 to Individual 3, Fitness: 11
+0110111011101111 -> Child 4 to Individual 4, Fitness: 12
+0010111011011011 -> Child 5 to Individual 5, Fitness: 10
+0110111011101011 -> Child 6 to Individual 6, Fitness: 11
+0001110111101110 -> Child 7 to Individual 7, Fitness: 10
+ ------------ Generation: 3 Best Fitness: 12 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 5:
+01101|11111100111 -> Parent 1 (Individual 2)
+01101|11111100111 -> Parent 2 (Individual 2)
+01101|11111100111 -> Child 0
+01101|11111100111 -> Child 1
+Crossover at chromosome 7:
+0110111|111100111 -> Parent 1 (Individual 2)
+0110111|111100111 -> Parent 2 (Individual 2)
+0110111|111100111 -> Child 2
+0110111|111100111 -> Child 3
+Crossover at chromosome 9:
+001011101|1011011 -> Parent 1 (Individual 5)
+011011101|1101011 -> Parent 2 (Individual 6)
+001011101|1101011 -> Child 4
+011011101|1011011 -> Child 5
+Crossover at chromosome 14:
+01101110111011|11 -> Parent 1 (Individual 4)
+01101111110010|11 -> Parent 2 (Individual 3)
+01101110111011|11 -> Child 6
+01101111110010|11 -> Child 7
+Running Mutate (Verbose)
+ 0  1  1  0  1  1 *0* 1  1  1  1  0  0  1  1  1 -> Child 0 Mutation at *_* 
+*1* 1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 -> Child 1 Mutation at *_* 
+ 0  1  1  0 *0* 1  1  1  1  1  1  0  0  1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0  0  1  0  1  1 *0* 0  1  1  1  0  1  0 *0* 1 -> Child 4 Mutation at *_* 
+ 0  1  1  0  1  1  1  0  1  1  0 *0* 1  0  1  1 -> Child 5 Mutation at *_* 
+ 0  1  1  0  1 *0* 1  0  1  1  1  0  1  1  1  1 -> Child 6 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  0  1  0  1  1 
+Assigning next generation (Verbose)
+0110110111100111 -> Child 0 to Individual 0, Fitness: 11
+1110111111100111 -> Child 1 to Individual 1, Fitness: 13
+0110011111100111 -> Child 2 to Individual 2, Fitness: 11
+0110111111100111 -> Child 3 to Individual 3, Fitness: 12
+0010110011101001 -> Child 4 to Individual 4, Fitness: 8
+0110111011001011 -> Child 5 to Individual 5, Fitness: 10
+0110101011101111 -> Child 6 to Individual 6, Fitness: 11
+0110111111001011 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 4 Best Fitness: 13 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 5:
+11101|11111100111 -> Parent 1 (Individual 1)
+11101|11111100111 -> Parent 2 (Individual 1)
+11101|11111100111 -> Child 0
+11101|11111100111 -> Child 1
+Crossover at chromosome 10:
+1110111111|100111 -> Parent 1 (Individual 1)
+0110101011|101111 -> Parent 2 (Individual 6)
+1110111111|101111 -> Child 2
+0110101011|100111 -> Child 3
+Crossover at chromosome 11:
+11101111111|00111 -> Parent 1 (Individual 1)
+01101111111|00111 -> Parent 2 (Individual 3)
+11101111111|00111 -> Child 4
+01101111111|00111 -> Child 5
+Crossover at chromosome 15:
+011010101110111|1 -> Parent 1 (Individual 6)
+011001111110011|1 -> Parent 2 (Individual 2)
+011010101110111|1 -> Child 6
+011001111110011|1 -> Child 7
+Running Mutate (Verbose)
+ 1  1 *0* 0  1  1  1  1  1  1  1  0  0  1  1  1 -> Child 0 Mutation at *_* 
+*0* 1  1  0  1  1  1  1  1  1  1  0  0 *0* 1  1 -> Child 1 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 0  1  1  0  1  0  1  0  1  1  1  0  0  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0  1  1  0  1  0  1  0  1  1  1  0  1  1  1 *0*-> Child 6 Mutation at *_* 
+ 0  1  1  0  0  1  1  1  1  1  1  0  0  1  1  1 
+Assigning next generation (Verbose)
+1100111111100111 -> Child 0 to Individual 0, Fitness: 12
+0110111111100011 -> Child 1 to Individual 1, Fitness: 11
+1110111111101111 -> Child 2 to Individual 2, Fitness: 14
+0110101011100111 -> Child 3 to Individual 3, Fitness: 10
+1110111111100111 -> Child 4 to Individual 4, Fitness: 13
+0110111111100111 -> Child 5 to Individual 5, Fitness: 12
+0110101011101110 -> Child 6 to Individual 6, Fitness: 10
+0110011111100111 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 5 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 2:
+11|10111111100111 -> Parent 1 (Individual 4)
+01|10111111100111 -> Parent 2 (Individual 5)
+11|10111111100111 -> Child 0
+01|10111111100111 -> Child 1
+Crossover at chromosome 15:
+111011111110111|1 -> Parent 1 (Individual 2)
+110011111110011|1 -> Parent 2 (Individual 0)
+111011111110111|1 -> Child 2
+110011111110011|1 -> Child 3
+Crossover at chromosome 8:
+11001111|11100111 -> Parent 1 (Individual 0)
+11101111|11100111 -> Parent 2 (Individual 4)
+11001111|11100111 -> Child 4
+11101111|11100111 -> Child 5
+Crossover at chromosome 4:
+0110|111111100111 -> Parent 1 (Individual 5)
+1100|111111100111 -> Parent 2 (Individual 0)
+0110|111111100111 -> Child 6
+1100|111111100111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  0  0 *0* 1  1 -> Child 0 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  0  0  1  1  1  1  1  1  1  0  0 *0* 1  1 -> Child 3 Mutation at *_* 
+ 1  1  0  0 *0* 1  1  1  1  1  1  0 *1* 1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0 *0* 1  0  1  1  1  1  1  1 *0* 0  0  1  1  1 -> Child 6 Mutation at *_* 
+ 1  1  0  0  1  1  1  1  1  1  1  0  0  1  1  1 
+Assigning next generation (Verbose)
+1110111111100011 -> Child 0 to Individual 0, Fitness: 12
+0110111111100111 -> Child 1 to Individual 1, Fitness: 12
+1110111111101111 -> Child 2 to Individual 2, Fitness: 14
+1100111111100011 -> Child 3 to Individual 3, Fitness: 11
+1100011111101111 -> Child 4 to Individual 4, Fitness: 12
+1110111111100111 -> Child 5 to Individual 5, Fitness: 13
+0010111111000111 -> Child 6 to Individual 6, Fitness: 10
+1100111111100111 -> Child 7 to Individual 7, Fitness: 12
+ ------------ Generation: 6 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 15:
+110001111110111|1 -> Parent 1 (Individual 4)
+011011111110011|1 -> Parent 2 (Individual 1)
+110001111110111|1 -> Child 0
+011011111110011|1 -> Child 1
+Crossover at chromosome 11:
+11101111111|00011 -> Parent 1 (Individual 0)
+11101111111|01111 -> Parent 2 (Individual 2)
+11101111111|01111 -> Child 2
+11101111111|00011 -> Child 3
+Crossover at chromosome 3:
+011|0111111100111 -> Parent 1 (Individual 1)
+111|0111111100111 -> Parent 2 (Individual 5)
+011|0111111100111 -> Child 4
+111|0111111100111 -> Child 5
+Crossover at chromosome 11:
+11101111111|01111 -> Parent 1 (Individual 2)
+11101111111|01111 -> Parent 2 (Individual 2)
+11101111111|01111 -> Child 6
+11101111111|01111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  0  1  1  1  1  1  1  0  1  1  1  1 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1 *0* 1  0  0  0  1  1 -> Child 3 Mutation at *_* 
+ 0  1  1  0  1  1 *0* 1  1  1  1  0  0  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1 *0* 1  1  1  1  0  0  1 *0**0*-> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1100011111101111 -> Child 0 to Individual 0, Fitness: 12
+0110111111100111 -> Child 1 to Individual 1, Fitness: 12
+1110111111101111 -> Child 2 to Individual 2, Fitness: 14
+1110111110100011 -> Child 3 to Individual 3, Fitness: 11
+0110110111100111 -> Child 4 to Individual 4, Fitness: 11
+1110110111100100 -> Child 5 to Individual 5, Fitness: 10
+1110111111101111 -> Child 6 to Individual 6, Fitness: 14
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 7 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 13:
+1110111111101|111 -> Parent 1 (Individual 6)
+1110111111101|111 -> Parent 2 (Individual 2)
+1110111111101|111 -> Child 0
+1110111111101|111 -> Child 1
+Crossover at chromosome 15:
+110001111110111|1 -> Parent 1 (Individual 0)
+111011111110111|1 -> Parent 2 (Individual 2)
+110001111110111|1 -> Child 2
+111011111110111|1 -> Child 3
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 7)
+111011111|1101111 -> Parent 2 (Individual 7)
+111011111|1101111 -> Child 4
+111011111|1101111 -> Child 5
+Crossover at chromosome 1:
+1|110111110100011 -> Parent 1 (Individual 3)
+1|110111111101111 -> Parent 2 (Individual 2)
+1|110111111101111 -> Child 6
+1|110111110100011 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1 *0* 1  1  0  1  1  1  1 -> Child 1 Mutation at *_* 
+ 1  1  0  0  0  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1 *0* 1  1  1  1  0  1  1  1  1 -> Child 3 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0 *0* 1  1  1  1  1  1  0  1  1  1  1 -> Child 5 Mutation at *_* 
+*0* 1  1  0  1  1  1  1  1  1  1 *1* 1  1  1  1 -> Child 6 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  0  1  0  0  0  1  1 
+Assigning next generation (Verbose)
+1110111111101111 -> Child 0 to Individual 0, Fitness: 14
+1110111101101111 -> Child 1 to Individual 1, Fitness: 13
+1100011111101111 -> Child 2 to Individual 2, Fitness: 12
+1110110111101111 -> Child 3 to Individual 3, Fitness: 13
+1110111111101111 -> Child 4 to Individual 4, Fitness: 14
+1110011111101111 -> Child 5 to Individual 5, Fitness: 13
+0110111111111111 -> Child 6 to Individual 6, Fitness: 14
+1110111110100011 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 8 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 14:
+01101111111111|11 -> Parent 1 (Individual 6)
+11101111111011|11 -> Parent 2 (Individual 4)
+01101111111111|11 -> Child 0
+11101111111011|11 -> Child 1
+Crossover at chromosome 6:
+111001|1111101111 -> Parent 1 (Individual 5)
+011011|1111111111 -> Parent 2 (Individual 6)
+111001|1111111111 -> Child 2
+011011|1111101111 -> Child 3
+Crossover at chromosome 9:
+011011111|1111111 -> Parent 1 (Individual 6)
+111011111|1101111 -> Parent 2 (Individual 4)
+011011111|1101111 -> Child 4
+111011111|1111111 -> Child 5
+Crossover at chromosome 4:
+1110|011111101111 -> Parent 1 (Individual 5)
+1110|011111101111 -> Parent 2 (Individual 5)
+1110|011111101111 -> Child 6
+1110|111111101111 -> Child 7
+Running Mutate (Verbose)
+ 0  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+*0* 1  1  0  1  1 *0* 1 *0* 1  1  0  1  1  1  1 -> Child 1 Mutation at *_* 
+ 1  1  1  0  0  1  1  1  1  1  1 *0* 1  1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 0 *0* 1  0  1  1 *0* 1  1  1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1 *0**0* 1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  1  0 *1* 1  1  1  1  1  1  0  1  1  1  1 -> Child 6 Mutation at *_* 
+ 1  1  1  0  0 *0* 1  1  1  1  1  0  1  1 *0* 1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0110111111111111 -> Child 0 to Individual 0, Fitness: 14
+0110110101101111 -> Child 1 to Individual 1, Fitness: 11
+1110011111101111 -> Child 2 to Individual 2, Fitness: 13
+0110111111101111 -> Child 3 to Individual 3, Fitness: 13
+0010110111101111 -> Child 4 to Individual 4, Fitness: 11
+1110111110011111 -> Child 5 to Individual 5, Fitness: 13
+1110111111101111 -> Child 6 to Individual 6, Fitness: 14
+1110001111101101 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 9 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 6)
+111011111|1101111 -> Parent 2 (Individual 6)
+111011111|1101111 -> Child 0
+111011111|1101111 -> Child 1
+Crossover at chromosome 15:
+111011111110111|1 -> Parent 1 (Individual 6)
+011011111111111|1 -> Parent 2 (Individual 0)
+111011111110111|1 -> Child 2
+011011111111111|1 -> Child 3
+Crossover at chromosome 6:
+111001|1111101111 -> Parent 1 (Individual 2)
+011011|1111101111 -> Parent 2 (Individual 3)
+111001|1111101111 -> Child 4
+011011|1111101111 -> Child 5
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 6)
+111011111|1101111 -> Parent 2 (Individual 6)
+111011111|1101111 -> Child 6
+111011111|1101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1 *0* 0  1 *0* 1  1  1  1  1  0  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1 *0* 1  1  1  1 *1* 1  1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  0  1  1  1  1  1  1  0  1  1 *0* 1 -> Child 4 Mutation at *_* 
+ 0  1  1  0  1  1 *0* 1 *0* 1  1  0  1  1 *0* 1 -> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1100101111101111 -> Child 0 to Individual 0, Fitness: 12
+1110111111101111 -> Child 1 to Individual 1, Fitness: 14
+1110110111111111 -> Child 2 to Individual 2, Fitness: 14
+0110111111111111 -> Child 3 to Individual 3, Fitness: 14
+1110011111101101 -> Child 4 to Individual 4, Fitness: 12
+0110110101101101 -> Child 5 to Individual 5, Fitness: 10
+1110111111101111 -> Child 6 to Individual 6, Fitness: 14
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 10 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 3:
+110|0101111101111 -> Parent 1 (Individual 0)
+011|0111111111111 -> Parent 2 (Individual 3)
+110|0111111111111 -> Child 0
+011|0101111101111 -> Child 1
+Crossover at chromosome 11:
+11101111111|01111 -> Parent 1 (Individual 1)
+11101111111|01111 -> Parent 2 (Individual 6)
+11101111111|01111 -> Child 2
+11101111111|01111 -> Child 3
+Crossover at chromosome 7:
+1110110|111111111 -> Parent 1 (Individual 2)
+1110111|111101111 -> Parent 2 (Individual 7)
+1110110|111101111 -> Child 4
+1110111|111111111 -> Child 5
+Crossover at chromosome 4:
+1110|111111101111 -> Parent 1 (Individual 7)
+0110|111111111111 -> Parent 2 (Individual 3)
+1110|111111111111 -> Child 6
+0110|111111101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 0 *0* 1  0  1  0  1 *0* 1  1  1  0  1  1  1  1 -> Child 1 Mutation at *_* 
+ 1  1 *0**1* 1  1  1  1  1  1  1  0  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  0 *0**0* 1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1 *0* 1  1  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 0  1  1 *1* 1  1  1  1  1  1  1  0  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1100111111111111 -> Child 0 to Individual 0, Fitness: 14
+0010101011101111 -> Child 1 to Individual 1, Fitness: 10
+1101111111101111 -> Child 2 to Individual 2, Fitness: 14
+1110111111101111 -> Child 3 to Individual 3, Fitness: 14
+1110110001101111 -> Child 4 to Individual 4, Fitness: 11
+1110111011111111 -> Child 5 to Individual 5, Fitness: 14
+1110111111111111 -> Child 6 to Individual 6, Fitness: 15
+0111111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 11 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 3:
+111|0111111111111 -> Parent 1 (Individual 6)
+111|0111111111111 -> Parent 2 (Individual 6)
+111|0111111111111 -> Child 0
+111|0111111111111 -> Child 1
+Crossover at chromosome 6:
+110111|1111101111 -> Parent 1 (Individual 2)
+111011|1111111111 -> Parent 2 (Individual 6)
+110111|1111111111 -> Child 2
+111011|1111101111 -> Child 3
+Crossover at chromosome 7:
+1100111|111111111 -> Parent 1 (Individual 0)
+1100111|111111111 -> Parent 2 (Individual 0)
+1100111|111111111 -> Child 4
+1100111|111111111 -> Child 5
+Crossover at chromosome 9:
+110111111|1101111 -> Parent 1 (Individual 2)
+110111111|1101111 -> Parent 2 (Individual 2)
+110111111|1101111 -> Child 6
+110111111|1101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0 *0* 1  1  1 *0* 1  1  1  1  1 *0* 1 -> Child 1 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  0  0  1  1 *0* 1  1  1  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  0  1  1  1  1 *0* 1  1  1  0  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1110111111111111 -> Child 0 to Individual 0, Fitness: 15
+1110011101111101 -> Child 1 to Individual 1, Fitness: 12
+1101111111111111 -> Child 2 to Individual 2, Fitness: 15
+1110111111101111 -> Child 3 to Individual 3, Fitness: 14
+1100111111111111 -> Child 4 to Individual 4, Fitness: 14
+1100110111111111 -> Child 5 to Individual 5, Fitness: 13
+1101111111101111 -> Child 6 to Individual 6, Fitness: 14
+1101111011101111 -> Child 7 to Individual 7, Fitness: 13
+ ------------ Generation: 12 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 9:
+111011111|1111111 -> Parent 1 (Individual 0)
+110111111|1111111 -> Parent 2 (Individual 2)
+111011111|1111111 -> Child 0
+110111111|1111111 -> Child 1
+Crossover at chromosome 2:
+11|10111111101111 -> Parent 1 (Individual 3)
+11|10111111111111 -> Parent 2 (Individual 0)
+11|10111111111111 -> Child 2
+11|00111111101111 -> Child 3
+Crossover at chromosome 9:
+110111111|1111111 -> Parent 1 (Individual 2)
+111011111|1111111 -> Parent 2 (Individual 0)
+110111111|1111111 -> Child 4
+111011111|1111111 -> Child 5
+Crossover at chromosome 14:
+11011111111111|11 -> Parent 1 (Individual 2)
+11101111111011|11 -> Parent 2 (Individual 3)
+11011111111111|11 -> Child 6
+11101111111011|11 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  1 *0* 1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  0  1 *0* 1  1  1  1  1  1  1  1  1  1 *0*-> Child 1 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1 *0* 0  1  1  1  1  1  1  1  0  1  1  1  1 -> Child 3 Mutation at *_* 
+ 1  1 *1* 1 *0* 1  1  1  1  1 *0* 1  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1 *0* 0  1  1  1  1  1  1  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1110111111110111 -> Child 0 to Individual 0, Fitness: 14
+1101011111111110 -> Child 1 to Individual 1, Fitness: 13
+1110111110111111 -> Child 2 to Individual 2, Fitness: 14
+1100111111101111 -> Child 3 to Individual 3, Fitness: 13
+1111011111011111 -> Child 4 to Individual 4, Fitness: 14
+1100111111111111 -> Child 5 to Individual 5, Fitness: 14
+1101111111111111 -> Child 6 to Individual 6, Fitness: 15
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 13 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 12:
+110011111111|1111 -> Parent 1 (Individual 5)
+110011111111|1111 -> Parent 2 (Individual 5)
+110011111111|1111 -> Child 0
+110011111111|1111 -> Child 1
+Crossover at chromosome 1:
+1|101111111111111 -> Parent 1 (Individual 6)
+1|101111111111111 -> Parent 2 (Individual 6)
+1|101111111111111 -> Child 2
+1|101111111111111 -> Child 3
+Crossover at chromosome 9:
+110111111|1111111 -> Parent 1 (Individual 6)
+110111111|1111111 -> Parent 2 (Individual 6)
+110111111|1111111 -> Child 4
+110111111|1111111 -> Child 5
+Crossover at chromosome 15:
+111011111011111|1 -> Parent 1 (Individual 2)
+111011111110111|1 -> Parent 2 (Individual 7)
+111011111011111|1 -> Child 6
+111011111110111|1 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1 *1* 0  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 1 Mutation at *_* 
+*0* 1  0  1  1 *0* 1  1  1  1  1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1  0  1  1 *0* 1  1 *0* 1  1  1  1  1  1  1 -> Child 3 Mutation at *_* 
+ 1 *0* 0  1 *0* 1  1  1  1  1  1  1  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  1  1 *0* 1  1  0  1  1  1 *0* 1  1 -> Child 6 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1100111111111111 -> Child 0 to Individual 0, Fitness: 14
+1110111110111111 -> Child 1 to Individual 1, Fitness: 14
+0101101111111111 -> Child 2 to Individual 2, Fitness: 13
+1101101101111111 -> Child 3 to Individual 3, Fitness: 13
+1001011111111111 -> Child 4 to Individual 4, Fitness: 13
+1101111111111111 -> Child 5 to Individual 5, Fitness: 15
+1110110110111011 -> Child 6 to Individual 6, Fitness: 12
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 14 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 11:
+11001111111|11111 -> Parent 1 (Individual 0)
+11001111111|11111 -> Parent 2 (Individual 0)
+11001111111|11111 -> Child 0
+11001111111|11111 -> Child 1
+Crossover at chromosome 11:
+11011111111|11111 -> Parent 1 (Individual 5)
+11011111111|11111 -> Parent 2 (Individual 5)
+11011111111|11111 -> Child 2
+11011111111|11111 -> Child 3
+Crossover at chromosome 5:
+11011|11111111111 -> Parent 1 (Individual 5)
+11101|11111101111 -> Parent 2 (Individual 7)
+11011|11111101111 -> Child 4
+11101|11111111111 -> Child 5
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 7)
+111011111|0111111 -> Parent 2 (Individual 1)
+111011111|0111111 -> Child 6
+111011111|1101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  0  0  1  1  1  1  1  1  1  1  1 *0* 1  1 -> Child 1 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1 *0* 1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1 *0* 0  1  1  1  1  1  1  1  1  1  1  1 *0* 1 -> Child 3 Mutation at *_* 
+*0* 1  0  1 *0* 1  1  1  1  1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  1 *0* 1  1 *0*-> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  0  1  1  1  1  1  1 
+ 1  1  1  0  1 *0* 1  1  1  1  1  0  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1100111110111111 -> Child 0 to Individual 0, Fitness: 13
+1100111111111011 -> Child 1 to Individual 1, Fitness: 13
+1101111111011111 -> Child 2 to Individual 2, Fitness: 14
+1001111111111101 -> Child 3 to Individual 3, Fitness: 13
+0101011111101111 -> Child 4 to Individual 4, Fitness: 12
+1110111111110110 -> Child 5 to Individual 5, Fitness: 13
+1110111110111111 -> Child 6 to Individual 6, Fitness: 14
+1110101111101111 -> Child 7 to Individual 7, Fitness: 13
+ ------------ Generation: 15 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 11:
+11101111111|10110 -> Parent 1 (Individual 5)
+11011111110|11111 -> Parent 2 (Individual 2)
+11101111111|11111 -> Child 0
+11011111110|10110 -> Child 1
+Crossover at chromosome 8:
+10011111|11111101 -> Parent 1 (Individual 3)
+11001111|11111011 -> Parent 2 (Individual 1)
+10011111|11111011 -> Child 2
+11001111|11111101 -> Child 3
+Crossover at chromosome 7:
+1101111|111011111 -> Parent 1 (Individual 2)
+1110111|111110110 -> Parent 2 (Individual 5)
+1101111|111110110 -> Child 4
+1110111|111011111 -> Child 5
+Crossover at chromosome 15:
+100111111111110|1 -> Parent 1 (Individual 3)
+111011111011111|1 -> Parent 2 (Individual 6)
+100111111111110|1 -> Child 6
+111011111011111|0 -> Child 7
+Running Mutate (Verbose)
+ 1  1 *0* 0  1  1  1  1  1  1  1  1  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  0  1  0  1  1  0 
+ 1  0  0  1  1  1  1  1  1  1  1  1  1  0  1 *0*-> Child 2 Mutation at *_* 
+ 1  1  0 *1* 1  1  1  1  1 *0* 1  1  1  1  0  1 -> Child 3 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1 *0* 1  0  1  1  0 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  0  1  1  1  1  1 
+ 1  0  0  1  1  1  1  1  1  1  1  1  1  1  0  1 
+ 1  1  1  0  1  1  1  1  1  0  1  1  1  1  1  1 
+Assigning next generation (Verbose)
+1100111111111111 -> Child 0 to Individual 0, Fitness: 14
+1101111111010110 -> Child 1 to Individual 1, Fitness: 12
+1001111111111010 -> Child 2 to Individual 2, Fitness: 12
+1101111110111101 -> Child 3 to Individual 3, Fitness: 13
+1101111111010110 -> Child 4 to Individual 4, Fitness: 12
+1110111111011111 -> Child 5 to Individual 5, Fitness: 14
+1001111111111101 -> Child 6 to Individual 6, Fitness: 13
+1110111110111111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 16 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 0:
+|1110111110111111 -> Parent 1 (Individual 7)
+|1110111111011111 -> Parent 2 (Individual 5)
+|1110111111011111 -> Child 0
+|1110111110111111 -> Child 1
+Crossover at chromosome 9:
+110111111|0111101 -> Parent 1 (Individual 3)
+110011111|1111111 -> Parent 2 (Individual 0)
+110111111|1111111 -> Child 2
+110011111|0111101 -> Child 3
+Crossover at chromosome 4:
+1110|111110111111 -> Parent 1 (Individual 7)
+1100|111111111111 -> Parent 2 (Individual 0)
+1110|111111111111 -> Child 4
+1100|111110111111 -> Child 5
+Crossover at chromosome 15:
+111011111011111|1 -> Parent 1 (Individual 7)
+110111111011110|1 -> Parent 2 (Individual 3)
+111011111011111|1 -> Child 6
+110111111011110|1 -> Child 7
+Running Mutate (Verbose)
+*0* 1  1 *1* 1 *0* 1  1  1  1  0  1  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  0  1  1  1  1  1 *0*-> Child 1 Mutation at *_* 
+ 1  1 *1* 1  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1 *0* 0  0  1  1  1  1  1  0  1  1  1 *0* 0  1 -> Child 3 Mutation at *_* 
+ 1  1 *0* 0  1  1  1  1  1  1  1  1  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1 *0* 0  0  1  1  1  1  1  0  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+*0* 1  1  0  1  1 *0* 1  1  0  1  1  1 *0* 1  1 -> Child 6 Mutation at *_* 
+*0* 1  0 *0* 1  1  1  1  1  0  1  1  1  1  0  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0111101111011111 -> Child 0 to Individual 0, Fitness: 13
+1110111110111110 -> Child 1 to Individual 1, Fitness: 13
+1111111110111111 -> Child 2 to Individual 2, Fitness: 15
+1000111110111001 -> Child 3 to Individual 3, Fitness: 10
+1100111111111111 -> Child 4 to Individual 4, Fitness: 14
+1000111110111111 -> Child 5 to Individual 5, Fitness: 12
+0110110110111011 -> Child 6 to Individual 6, Fitness: 11
+0100111110111101 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 17 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 2:
+11|10111110111110 -> Parent 1 (Individual 1)
+11|11111110111111 -> Parent 2 (Individual 2)
+11|11111110111111 -> Child 0
+11|10111110111110 -> Child 1
+Crossover at chromosome 6:
+011110|1111011111 -> Parent 1 (Individual 0)
+111111|1110111111 -> Parent 2 (Individual 2)
+011110|1110111111 -> Child 2
+111111|1111011111 -> Child 3
+Crossover at chromosome 5:
+11001|11111111111 -> Parent 1 (Individual 4)
+11111|11110111111 -> Parent 2 (Individual 2)
+11001|11110111111 -> Child 4
+11111|11111111111 -> Child 5
+Crossover at chromosome 12:
+011110111101|1111 -> Parent 1 (Individual 0)
+111011111011|1110 -> Parent 2 (Individual 1)
+011110111101|1110 -> Child 6
+111011111011|1111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  1  1  1  1  1  1  0  1  1  1  1  1  1 
+ 1  1  1  0  1 *0* 1  1  1  0  1  1  1  1  1  0 -> Child 1 Mutation at *_* 
+ 0  1 *0* 1  1  0  1  1  1 *1* 1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1  1  1  1  1  1  1  1  1 *1* 1 *0* 1  1  1 -> Child 3 Mutation at *_* 
+ 1  1  0  0  1  1  1  1  1  0  1  1  1  1  1  1 
+ 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 0  1  1  1  1  0  1  1  1  1  0  1  1  1  1  0 
+ 1  1  1 *1* 1 *0* 1  1  1  0  1  1  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1111111110111111 -> Child 0 to Individual 0, Fitness: 15
+1110101110111110 -> Child 1 to Individual 1, Fitness: 12
+0101101111111111 -> Child 2 to Individual 2, Fitness: 13
+1111111111110111 -> Child 3 to Individual 3, Fitness: 15
+1100111110111111 -> Child 4 to Individual 4, Fitness: 13
+1111111111111111 -> Child 5 to Individual 5, Fitness: 16
+0111101111011110 -> Child 6 to Individual 6, Fitness: 12
+1111101110111111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 18 Best Fitness: 16 --------------
+Runtime (microseconds): 4742
+Generation,Best Fitness
+0,528
+1,541
+2,543
+3,552
+4,561
+5,570
+6,572
+7,583
+8,582
+9,590
+10,597
+11,598
+12,602
+13,613
+14,609
+15,619
+16,619
+17,621
+18,626
+19,630
+20,631
+21,634
+22,634
+23,638
+24,639
+25,640
+26,642
+27,647
+28,647
+29,650
+30,652
+31,654
+32,655
+33,657
+34,662
+35,662
+36,666
+37,666
+38,670
+39,670
+40,674
+41,677
+42,679
+43,681
+44,684
+45,686
+46,689
+47,691
+48,692
+49,695
+50,697
+51,697
+52,700
+53,703
+54,704
+55,707
+56,707
+57,708
+58,708
+59,711
+60,712
+61,714
+62,714
+63,716
+64,718
+65,719
+66,720
+67,723
+68,724
+69,725
+70,727
+71,727
+72,730
+73,730
+74,733
+75,733
+76,736
+77,737
+78,738
+79,742
+80,742
+81,742
+82,743
+83,746
+84,747
+85,750
+86,752
+87,753
+88,754
+89,754
+90,757
+91,760
+92,763
+93,763
+94,767
+95,767
+96,768
+97,770
+98,772
+99,773
+100,773
+101,774
+102,774
+103,776
+104,777
+105,780
+106,779
+107,782
+108,783
+109,783
+110,784
+111,786
+112,787
+113,790
+114,793
+115,795
+116,797
+117,798
+118,801
+119,800
+120,803
+121,803
+122,803
+123,805
+124,806
+125,807
+126,808
+127,810
+128,810
+129,811
+130,813
+131,814
+132,815
+133,816
+134,817
+135,818
+136,819
+137,820
+138,821
+139,822
+140,824
+141,826
+142,826
+143,827
+144,828
+145,831
+146,831
+147,832
+148,834
+149,835
+150,836
+151,839
+152,840
+153,842
+154,842
+155,844
+156,844
+157,846
+158,848
+159,849
+160,850
+161,851
+162,852
+163,852
+164,853
+165,855
+166,856
+167,857
+168,859
+169,859
+170,861
+171,862
+172,862
+173,865
+174,865
+175,866
+176,866
+177,866
+178,867
+179,868
+180,869
+181,870
+182,872
+183,872
+184,873
+185,875
+186,875
+187,876
+188,879
+189,880
+190,881
+191,881
+192,882
+193,882
+194,883
+195,883
+196,885
+197,885
+198,885
+199,888
+200,889
+201,888
+202,888
+203,891
+204,889
+205,892
+206,892
+207,893
+208,892
+209,893
+210,895
+211,895
+212,896
+213,898
+214,898
+215,899
+216,900
+217,901
+218,901
+219,903
+220,903
+221,904
+222,905
+223,906
+224,907
+225,908
+226,908
+227,909
+228,910
+229,911
+230,913
+231,913
+232,914
+233,913
+234,914
+235,914
+236,915
+237,917
+238,917
+239,918
+240,920
+241,920
+242,920
+243,922
+244,922
+245,922
+246,923
+247,924
+248,926
+249,926
+250,926
+251,929
+252,928
+253,930
+254,930
+255,930
+256,931
+257,932
+258,933
+259,934
+260,937
+261,936
+262,937
+263,937
+264,938
+265,938
+266,938
+267,938
+268,939
+269,940
+270,940
+271,940
+272,941
+273,941
+274,943
+275,943
+276,945
+277,944
+278,944
+279,945
+280,945
+281,946
+282,946
+283,946
+284,948
+285,950
+286,949
+287,950
+288,950
+289,951
+290,951
+291,953
+292,953
+293,953
+294,953
+295,952
+296,954
+297,954
+298,954
+299,955
+300,954
+301,956
+302,956
+303,957
+304,957
+305,957
+306,959
+307,958
+308,959
+309,960
+310,960
+311,961
+312,961
+313,962
+314,963
+315,963
+316,963
+317,964
+318,963
+319,964
+320,965
+321,966
+322,966
+323,967
+324,967
+325,967
+326,967
+327,968
+328,968
+329,969
+330,969
+331,970
+332,969
+333,970
+334,971
+335,971
+336,972
+337,972
+338,972
+339,972
+340,972
+341,973
+342,973
+343,974
+344,973
+345,974
+346,974
+347,974
+348,975
+349,975
+350,976
+351,977
+352,976
+353,977
+354,977
+355,977
+356,978
+357,978
+358,978
+359,979
+360,979
+361,979
+362,980
+363,981
+364,982
+365,981
+366,981
+367,981
+368,982
+369,982
+370,983
+371,983
+372,983
+373,984
+374,984
+375,984
+376,985
+377,985
+378,986
+379,986
+380,987
+381,987
+382,988
+383,988
+384,988
+385,988
+386,989
+387,989
+388,990
+389,989
+390,990
+391,992
+392,992
+393,992
+394,992
+395,992
+396,991
+397,991
+398,991
+399,991
+400,992
+401,992
+402,992
+403,993
+404,992
+405,992
+406,992
+407,993
+408,993
+409,993
+410,993
+411,993
+412,994
+413,994
+414,994
+415,994
+416,994
+417,994
+418,994
+419,994
+420,994
+421,994
+422,995
+423,995
+424,996
+425,996
+426,995
+427,996
+428,996
+429,996
+430,996
+431,996
+432,997
+433,996
+434,997
+435,996
+436,997
+437,997
+438,997
+439,997
+440,997
+441,997
+442,996
+443,996
+444,997
+445,997
+446,997
+447,998
+448,998
+449,998
+450,997
+451,998
+452,998
+453,998
+454,998
+455,998
+456,998
+457,998
+458,998
+459,999
+460,998
+461,999
+462,999
+463,999
+464,998
+465,998
+466,999
+467,999
+468,999
+469,999
+470,999
+471,999
+472,999
+473,999
+474,999
+475,999
+476,999
+477,999
+478,999
+479,999
+480,999
+481,999
+482,1000
+Runtime (microseconds): 769514
+Running MaxFitness (Verbose)
+0011001011011000 -> Individual 0, Fitness: 7
+0001101111101011 -> Individual 1, Fitness: 10
+0000011011101111 -> Individual 2, Fitness: 9
+0101010111101110 -> Individual 3, Fitness: 10
+1100010101010110 -> Individual 4, Fitness: 8
+0110111001000101 -> Individual 5, Fitness: 8
+0010010000011111 -> Individual 6, Fitness: 7
+0101011101100100 -> Individual 7, Fitness: 8
+ ------------ Generation: 0 Best Fitness: 10 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 7:
+0001101|111101011 -> Parent 1 (Individual 1)
+0110111|001000101 -> Parent 2 (Individual 5)
+0001101|001000101 -> Child 0
+0110111|111101011 -> Child 1
+Crossover at chromosome 7:
+0110111|001000101 -> Parent 1 (Individual 5)
+1100010|101010110 -> Parent 2 (Individual 4)
+0110111|101010110 -> Child 2
+1100010|101000101 -> Child 3
+Crossover at chromosome 15:
+000110111110101|1 -> Parent 1 (Individual 1)
+010101011110111|0 -> Parent 2 (Individual 3)
+000110111110101|0 -> Child 4
+010101011110111|1 -> Child 5
+Crossover at chromosome 0:
+|0001101111101011 -> Parent 1 (Individual 1)
+|0001101111101011 -> Parent 2 (Individual 1)
+|0001101111101011 -> Child 6
+|0001101111101011 -> Child 7
+Running Mutate (Verbose)
+ 0  0  0  1  1  0  1 *1* 0  1  0  0  0 *0* 0  1 -> Child 0 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  1  0  1  1 
+ 0  1  1  0  1  1  1  1 *1* 1  0  1  0  1  1  0 -> Child 2 Mutation at *_* 
+ 1 *0* 0  0  0  1  0  0  0  1 *1* 0  0  1  0  1 -> Child 3 Mutation at *_* 
+ 0  0  0  1  1  0 *0* 1  1  1  1  0  1  0  1  0 -> Child 4 Mutation at *_* 
+ 0  1  0  1  0  1  0  1  1  1  1  0  1  1  1  1 
+ 0  0  0  1  1  0  1  1  1  1  1  0  1  0  1  1 
+ 0  0  0  1  1  0  1  1  1  1  1  0  1  0  1  1 
+Assigning next generation (Verbose)
+0001101101000001 -> Child 0 to Individual 0, Fitness: 6
+0110111111101011 -> Child 1 to Individual 1, Fitness: 12
+0110111111010110 -> Child 2 to Individual 2, Fitness: 11
+1000010001100101 -> Child 3 to Individual 3, Fitness: 6
+0001100111101010 -> Child 4 to Individual 4, Fitness: 8
+0101010111101111 -> Child 5 to Individual 5, Fitness: 11
+0001101111101011 -> Child 6 to Individual 6, Fitness: 10
+0001101111101011 -> Child 7 to Individual 7, Fitness: 10
+ ------------ Generation: 1 Best Fitness: 12 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 10:
+0110111111|101011 -> Parent 1 (Individual 1)
+0101010111|101111 -> Parent 2 (Individual 5)
+0110111111|101111 -> Child 0
+0101010111|101011 -> Child 1
+Crossover at chromosome 14:
+01101111110101|10 -> Parent 1 (Individual 2)
+00011001111010|10 -> Parent 2 (Individual 4)
+01101111110101|10 -> Child 2
+00011001111010|10 -> Child 3
+Crossover at chromosome 11:
+01101111110|10110 -> Parent 1 (Individual 2)
+00011011111|01011 -> Parent 2 (Individual 7)
+01101111110|01011 -> Child 4
+00011011111|00110 -> Child 5
+Crossover at chromosome 14:
+01010101111011|11 -> Parent 1 (Individual 5)
+01101111110101|10 -> Parent 2 (Individual 2)
+01010101111011|10 -> Child 6
+01101111110101|11 -> Child 7
+Running Mutate (Verbose)
+ 0  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 0  1  0  1  0  1  0  1  1  1  1  0 *0* 0  1  1 -> Child 1 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  1  0  1  1  0 
+ 0  0  0  1  1  0  0 *0* 1  1  1  0  1  0  1 *1*-> Child 3 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  0  1  0  1  1 
+ 0  0  0  1  1  0  1  1  1  1  1  1  0  1  1 *1*-> Child 5 Mutation at *_* 
+ 0  1  0  1  0  1  0  1  1  1  1  0 *0* 1  1  0 -> Child 6 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1 *0* 0  1  0  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0110111111101111 -> Child 0 to Individual 0, Fitness: 13
+0101010111100011 -> Child 1 to Individual 1, Fitness: 9
+0110111111010110 -> Child 2 to Individual 2, Fitness: 11
+0001100011101011 -> Child 3 to Individual 3, Fitness: 8
+0110111111001011 -> Child 4 to Individual 4, Fitness: 11
+0001101111110111 -> Child 5 to Individual 5, Fitness: 11
+0101010111100110 -> Child 6 to Individual 6, Fitness: 9
+0110111110010111 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 2 Best Fitness: 13 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 9:
+011011111|1010110 -> Parent 1 (Individual 2)
+011011111|1001011 -> Parent 2 (Individual 4)
+011011111|1001011 -> Child 0
+011011111|1010110 -> Child 1
+Crossover at chromosome 15:
+011011111110111|1 -> Parent 1 (Individual 0)
+011011111100101|1 -> Parent 2 (Individual 4)
+011011111110111|1 -> Child 2
+011011111100101|0 -> Child 3
+Crossover at chromosome 9:
+011011111|1001011 -> Parent 1 (Individual 4)
+011011111|1101111 -> Parent 2 (Individual 0)
+011011111|1101111 -> Child 4
+011011111|1001011 -> Child 5
+Crossover at chromosome 0:
+|0110111111101111 -> Parent 1 (Individual 0)
+|0110111111001011 -> Parent 2 (Individual 4)
+|0110111111001011 -> Child 6
+|0110111111101111 -> Child 7
+Running Mutate (Verbose)
+ 0  1 *0* 0  1  1  1  1  1  1  0  0  1  0  1  1 -> Child 0 Mutation at *_* 
+ 0  1  1  0  1  1 *0* 1  1  1  0  1  0  1  1  0 -> Child 1 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0 *0* 1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  0  1  0  1  1 
+ 0  1  1  0  1  1  1 *0* 1  1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 0 *0* 1  0  1  1  1 *0* 1  1  0 *1* 1  0  1  1 -> Child 5 Mutation at *_* 
+ 0  1  1  0  1  1  1 *0* 1  1 *1* 0  1  0  1  1 -> Child 6 Mutation at *_* 
+ 0 *0**0**1* 1  1 *0* 1  1  1  1  0  1  1  1 *0*-> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0100111111001011 -> Child 0 to Individual 0, Fitness: 10
+0110110111010110 -> Child 1 to Individual 1, Fitness: 10
+0110111111100111 -> Child 2 to Individual 2, Fitness: 12
+0110111111001011 -> Child 3 to Individual 3, Fitness: 11
+0110111011101111 -> Child 4 to Individual 4, Fitness: 12
+0010111011011011 -> Child 5 to Individual 5, Fitness: 10
+0110111011101011 -> Child 6 to Individual 6, Fitness: 11
+0001110111101110 -> Child 7 to Individual 7, Fitness: 10
+ ------------ Generation: 3 Best Fitness: 12 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 5:
+01101|11111100111 -> Parent 1 (Individual 2)
+01101|11111100111 -> Parent 2 (Individual 2)
+01101|11111100111 -> Child 0
+01101|11111100111 -> Child 1
+Crossover at chromosome 7:
+0110111|111100111 -> Parent 1 (Individual 2)
+0110111|111100111 -> Parent 2 (Individual 2)
+0110111|111100111 -> Child 2
+0110111|111100111 -> Child 3
+Crossover at chromosome 9:
+001011101|1011011 -> Parent 1 (Individual 5)
+011011101|1101011 -> Parent 2 (Individual 6)
+001011101|1101011 -> Child 4
+011011101|1011011 -> Child 5
+Crossover at chromosome 14:
+01101110111011|11 -> Parent 1 (Individual 4)
+01101111110010|11 -> Parent 2 (Individual 3)
+01101110111011|11 -> Child 6
+01101111110010|11 -> Child 7
+Running Mutate (Verbose)
+ 0  1  1  0  1  1 *0* 1  1  1  1  0  0  1  1  1 -> Child 0 Mutation at *_* 
+*1* 1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 -> Child 1 Mutation at *_* 
+ 0  1  1  0 *0* 1  1  1  1  1  1  0  0  1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0  0  1  0  1  1 *0* 0  1  1  1  0  1  0 *0* 1 -> Child 4 Mutation at *_* 
+ 0  1  1  0  1  1  1  0  1  1  0 *0* 1  0  1  1 -> Child 5 Mutation at *_* 
+ 0  1  1  0  1 *0* 1  0  1  1  1  0  1  1  1  1 -> Child 6 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  0  0  1  0  1  1 
+Assigning next generation (Verbose)
+0110110111100111 -> Child 0 to Individual 0, Fitness: 11
+1110111111100111 -> Child 1 to Individual 1, Fitness: 13
+0110011111100111 -> Child 2 to Individual 2, Fitness: 11
+0110111111100111 -> Child 3 to Individual 3, Fitness: 12
+0010110011101001 -> Child 4 to Individual 4, Fitness: 8
+0110111011001011 -> Child 5 to Individual 5, Fitness: 10
+0110101011101111 -> Child 6 to Individual 6, Fitness: 11
+0110111111001011 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 4 Best Fitness: 13 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 5:
+11101|11111100111 -> Parent 1 (Individual 1)
+11101|11111100111 -> Parent 2 (Individual 1)
+11101|11111100111 -> Child 0
+11101|11111100111 -> Child 1
+Crossover at chromosome 10:
+1110111111|100111 -> Parent 1 (Individual 1)
+0110101011|101111 -> Parent 2 (Individual 6)
+1110111111|101111 -> Child 2
+0110101011|100111 -> Child 3
+Crossover at chromosome 11:
+11101111111|00111 -> Parent 1 (Individual 1)
+01101111111|00111 -> Parent 2 (Individual 3)
+11101111111|00111 -> Child 4
+01101111111|00111 -> Child 5
+Crossover at chromosome 15:
+011010101110111|1 -> Parent 1 (Individual 6)
+011001111110011|1 -> Parent 2 (Individual 2)
+011010101110111|1 -> Child 6
+011001111110011|1 -> Child 7
+Running Mutate (Verbose)
+ 1  1 *0* 0  1  1  1  1  1  1  1  0  0  1  1  1 -> Child 0 Mutation at *_* 
+*0* 1  1  0  1  1  1  1  1  1  1  0  0 *0* 1  1 -> Child 1 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 0  1  1  0  1  0  1  0  1  1  1  0  0  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0  1  1  0  1  0  1  0  1  1  1  0  1  1  1 *0*-> Child 6 Mutation at *_* 
+ 0  1  1  0  0  1  1  1  1  1  1  0  0  1  1  1 
+Assigning next generation (Verbose)
+1100111111100111 -> Child 0 to Individual 0, Fitness: 12
+0110111111100011 -> Child 1 to Individual 1, Fitness: 11
+1110111111101111 -> Child 2 to Individual 2, Fitness: 14
+0110101011100111 -> Child 3 to Individual 3, Fitness: 10
+1110111111100111 -> Child 4 to Individual 4, Fitness: 13
+0110111111100111 -> Child 5 to Individual 5, Fitness: 12
+0110101011101110 -> Child 6 to Individual 6, Fitness: 10
+0110011111100111 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 5 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 2:
+11|10111111100111 -> Parent 1 (Individual 4)
+01|10111111100111 -> Parent 2 (Individual 5)
+11|10111111100111 -> Child 0
+01|10111111100111 -> Child 1
+Crossover at chromosome 15:
+111011111110111|1 -> Parent 1 (Individual 2)
+110011111110011|1 -> Parent 2 (Individual 0)
+111011111110111|1 -> Child 2
+110011111110011|1 -> Child 3
+Crossover at chromosome 8:
+11001111|11100111 -> Parent 1 (Individual 0)
+11101111|11100111 -> Parent 2 (Individual 4)
+11001111|11100111 -> Child 4
+11101111|11100111 -> Child 5
+Crossover at chromosome 4:
+0110|111111100111 -> Parent 1 (Individual 5)
+1100|111111100111 -> Parent 2 (Individual 0)
+0110|111111100111 -> Child 6
+1100|111111100111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  0  0 *0* 1  1 -> Child 0 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  0  0  1  1  1  1  1  1  1  0  0 *0* 1  1 -> Child 3 Mutation at *_* 
+ 1  1  0  0 *0* 1  1  1  1  1  1  0 *1* 1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 0 *0* 1  0  1  1  1  1  1  1 *0* 0  0  1  1  1 -> Child 6 Mutation at *_* 
+ 1  1  0  0  1  1  1  1  1  1  1  0  0  1  1  1 
+Assigning next generation (Verbose)
+1110111111100011 -> Child 0 to Individual 0, Fitness: 12
+0110111111100111 -> Child 1 to Individual 1, Fitness: 12
+1110111111101111 -> Child 2 to Individual 2, Fitness: 14
+1100111111100011 -> Child 3 to Individual 3, Fitness: 11
+1100011111101111 -> Child 4 to Individual 4, Fitness: 12
+1110111111100111 -> Child 5 to Individual 5, Fitness: 13
+0010111111000111 -> Child 6 to Individual 6, Fitness: 10
+1100111111100111 -> Child 7 to Individual 7, Fitness: 12
+ ------------ Generation: 6 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 15:
+110001111110111|1 -> Parent 1 (Individual 4)
+011011111110011|1 -> Parent 2 (Individual 1)
+110001111110111|1 -> Child 0
+011011111110011|1 -> Child 1
+Crossover at chromosome 11:
+11101111111|00011 -> Parent 1 (Individual 0)
+11101111111|01111 -> Parent 2 (Individual 2)
+11101111111|01111 -> Child 2
+11101111111|00011 -> Child 3
+Crossover at chromosome 3:
+011|0111111100111 -> Parent 1 (Individual 1)
+111|0111111100111 -> Parent 2 (Individual 5)
+011|0111111100111 -> Child 4
+111|0111111100111 -> Child 5
+Crossover at chromosome 11:
+11101111111|01111 -> Parent 1 (Individual 2)
+11101111111|01111 -> Parent 2 (Individual 2)
+11101111111|01111 -> Child 6
+11101111111|01111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  0  1  1  1  1  1  1  0  1  1  1  1 
+ 0  1  1  0  1  1  1  1  1  1  1  0  0  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1 *0* 1  0  0  0  1  1 -> Child 3 Mutation at *_* 
+ 0  1  1  0  1  1 *0* 1  1  1  1  0  0  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1 *0* 1  1  1  1  0  0  1 *0**0*-> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1100011111101111 -> Child 0 to Individual 0, Fitness: 12
+0110111111100111 -> Child 1 to Individual 1, Fitness: 12
+1110111111101111 -> Child 2 to Individual 2, Fitness: 14
+1110111110100011 -> Child 3 to Individual 3, Fitness: 11
+0110110111100111 -> Child 4 to Individual 4, Fitness: 11
+1110110111100100 -> Child 5 to Individual 5, Fitness: 10
+1110111111101111 -> Child 6 to Individual 6, Fitness: 14
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 7 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 13:
+1110111111101|111 -> Parent 1 (Individual 6)
+1110111111101|111 -> Parent 2 (Individual 2)
+1110111111101|111 -> Child 0
+1110111111101|111 -> Child 1
+Crossover at chromosome 15:
+110001111110111|1 -> Parent 1 (Individual 0)
+111011111110111|1 -> Parent 2 (Individual 2)
+110001111110111|1 -> Child 2
+111011111110111|1 -> Child 3
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 7)
+111011111|1101111 -> Parent 2 (Individual 7)
+111011111|1101111 -> Child 4
+111011111|1101111 -> Child 5
+Crossover at chromosome 1:
+1|110111110100011 -> Parent 1 (Individual 3)
+1|110111111101111 -> Parent 2 (Individual 2)
+1|110111111101111 -> Child 6
+1|110111110100011 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1 *0* 1  1  0  1  1  1  1 -> Child 1 Mutation at *_* 
+ 1  1  0  0  0  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1 *0* 1  1  1  1  0  1  1  1  1 -> Child 3 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0 *0* 1  1  1  1  1  1  0  1  1  1  1 -> Child 5 Mutation at *_* 
+*0* 1  1  0  1  1  1  1  1  1  1 *1* 1  1  1  1 -> Child 6 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  0  1  0  0  0  1  1 
+Assigning next generation (Verbose)
+1110111111101111 -> Child 0 to Individual 0, Fitness: 14
+1110111101101111 -> Child 1 to Individual 1, Fitness: 13
+1100011111101111 -> Child 2 to Individual 2, Fitness: 12
+1110110111101111 -> Child 3 to Individual 3, Fitness: 13
+1110111111101111 -> Child 4 to Individual 4, Fitness: 14
+1110011111101111 -> Child 5 to Individual 5, Fitness: 13
+0110111111111111 -> Child 6 to Individual 6, Fitness: 14
+1110111110100011 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 8 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 14:
+01101111111111|11 -> Parent 1 (Individual 6)
+11101111111011|11 -> Parent 2 (Individual 4)
+01101111111111|11 -> Child 0
+11101111111011|11 -> Child 1
+Crossover at chromosome 6:
+111001|1111101111 -> Parent 1 (Individual 5)
+011011|1111111111 -> Parent 2 (Individual 6)
+111001|1111111111 -> Child 2
+011011|1111101111 -> Child 3
+Crossover at chromosome 9:
+011011111|1111111 -> Parent 1 (Individual 6)
+111011111|1101111 -> Parent 2 (Individual 4)
+011011111|1101111 -> Child 4
+111011111|1111111 -> Child 5
+Crossover at chromosome 4:
+1110|011111101111 -> Parent 1 (Individual 5)
+1110|011111101111 -> Parent 2 (Individual 5)
+1110|011111101111 -> Child 6
+1110|111111101111 -> Child 7
+Running Mutate (Verbose)
+ 0  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+*0* 1  1  0  1  1 *0* 1 *0* 1  1  0  1  1  1  1 -> Child 1 Mutation at *_* 
+ 1  1  1  0  0  1  1  1  1  1  1 *0* 1  1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 0 *0* 1  0  1  1 *0* 1  1  1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1 *0**0* 1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  1  0 *1* 1  1  1  1  1  1  0  1  1  1  1 -> Child 6 Mutation at *_* 
+ 1  1  1  0  0 *0* 1  1  1  1  1  0  1  1 *0* 1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0110111111111111 -> Child 0 to Individual 0, Fitness: 14
+0110110101101111 -> Child 1 to Individual 1, Fitness: 11
+1110011111101111 -> Child 2 to Individual 2, Fitness: 13
+0110111111101111 -> Child 3 to Individual 3, Fitness: 13
+0010110111101111 -> Child 4 to Individual 4, Fitness: 11
+1110111110011111 -> Child 5 to Individual 5, Fitness: 13
+1110111111101111 -> Child 6 to Individual 6, Fitness: 14
+1110001111101101 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 9 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 6)
+111011111|1101111 -> Parent 2 (Individual 6)
+111011111|1101111 -> Child 0
+111011111|1101111 -> Child 1
+Crossover at chromosome 15:
+111011111110111|1 -> Parent 1 (Individual 6)
+011011111111111|1 -> Parent 2 (Individual 0)
+111011111110111|1 -> Child 2
+011011111111111|1 -> Child 3
+Crossover at chromosome 6:
+111001|1111101111 -> Parent 1 (Individual 2)
+011011|1111101111 -> Parent 2 (Individual 3)
+111001|1111101111 -> Child 4
+011011|1111101111 -> Child 5
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 6)
+111011111|1101111 -> Parent 2 (Individual 6)
+111011111|1101111 -> Child 6
+111011111|1101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1 *0* 0  1 *0* 1  1  1  1  1  0  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1 *0* 1  1  1  1 *1* 1  1  1  1 -> Child 2 Mutation at *_* 
+ 0  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  0  1  1  1  1  1  1  0  1  1 *0* 1 -> Child 4 Mutation at *_* 
+ 0  1  1  0  1  1 *0* 1 *0* 1  1  0  1  1 *0* 1 -> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1100101111101111 -> Child 0 to Individual 0, Fitness: 12
+1110111111101111 -> Child 1 to Individual 1, Fitness: 14
+1110110111111111 -> Child 2 to Individual 2, Fitness: 14
+0110111111111111 -> Child 3 to Individual 3, Fitness: 14
+1110011111101101 -> Child 4 to Individual 4, Fitness: 12
+0110110101101101 -> Child 5 to Individual 5, Fitness: 10
+1110111111101111 -> Child 6 to Individual 6, Fitness: 14
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 10 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 3:
+110|0101111101111 -> Parent 1 (Individual 0)
+011|0111111111111 -> Parent 2 (Individual 3)
+110|0111111111111 -> Child 0
+011|0101111101111 -> Child 1
+Crossover at chromosome 11:
+11101111111|01111 -> Parent 1 (Individual 1)
+11101111111|01111 -> Parent 2 (Individual 6)
+11101111111|01111 -> Child 2
+11101111111|01111 -> Child 3
+Crossover at chromosome 7:
+1110110|111111111 -> Parent 1 (Individual 2)
+1110111|111101111 -> Parent 2 (Individual 7)
+1110110|111101111 -> Child 4
+1110111|111111111 -> Child 5
+Crossover at chromosome 4:
+1110|111111101111 -> Parent 1 (Individual 7)
+0110|111111111111 -> Parent 2 (Individual 3)
+1110|111111111111 -> Child 6
+0110|111111101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 0 *0* 1  0  1  0  1 *0* 1  1  1  0  1  1  1  1 -> Child 1 Mutation at *_* 
+ 1  1 *0**1* 1  1  1  1  1  1  1  0  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  1  0  1  1  0 *0**0* 1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1 *0* 1  1  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 0  1  1 *1* 1  1  1  1  1  1  1  0  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1100111111111111 -> Child 0 to Individual 0, Fitness: 14
+0010101011101111 -> Child 1 to Individual 1, Fitness: 10
+1101111111101111 -> Child 2 to Individual 2, Fitness: 14
+1110111111101111 -> Child 3 to Individual 3, Fitness: 14
+1110110001101111 -> Child 4 to Individual 4, Fitness: 11
+1110111011111111 -> Child 5 to Individual 5, Fitness: 14
+1110111111111111 -> Child 6 to Individual 6, Fitness: 15
+0111111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 11 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 3:
+111|0111111111111 -> Parent 1 (Individual 6)
+111|0111111111111 -> Parent 2 (Individual 6)
+111|0111111111111 -> Child 0
+111|0111111111111 -> Child 1
+Crossover at chromosome 6:
+110111|1111101111 -> Parent 1 (Individual 2)
+111011|1111111111 -> Parent 2 (Individual 6)
+110111|1111111111 -> Child 2
+111011|1111101111 -> Child 3
+Crossover at chromosome 7:
+1100111|111111111 -> Parent 1 (Individual 0)
+1100111|111111111 -> Parent 2 (Individual 0)
+1100111|111111111 -> Child 4
+1100111|111111111 -> Child 5
+Crossover at chromosome 9:
+110111111|1101111 -> Parent 1 (Individual 2)
+110111111|1101111 -> Parent 2 (Individual 2)
+110111111|1101111 -> Child 6
+110111111|1101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0 *0* 1  1  1 *0* 1  1  1  1  1 *0* 1 -> Child 1 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  0  0  1  1 *0* 1  1  1  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  0  1  1  1  1 
+ 1  1  0  1  1  1  1 *0* 1  1  1  0  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1110111111111111 -> Child 0 to Individual 0, Fitness: 15
+1110011101111101 -> Child 1 to Individual 1, Fitness: 12
+1101111111111111 -> Child 2 to Individual 2, Fitness: 15
+1110111111101111 -> Child 3 to Individual 3, Fitness: 14
+1100111111111111 -> Child 4 to Individual 4, Fitness: 14
+1100110111111111 -> Child 5 to Individual 5, Fitness: 13
+1101111111101111 -> Child 6 to Individual 6, Fitness: 14
+1101111011101111 -> Child 7 to Individual 7, Fitness: 13
+ ------------ Generation: 12 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 9:
+111011111|1111111 -> Parent 1 (Individual 0)
+110111111|1111111 -> Parent 2 (Individual 2)
+111011111|1111111 -> Child 0
+110111111|1111111 -> Child 1
+Crossover at chromosome 2:
+11|10111111101111 -> Parent 1 (Individual 3)
+11|10111111111111 -> Parent 2 (Individual 0)
+11|10111111111111 -> Child 2
+11|00111111101111 -> Child 3
+Crossover at chromosome 9:
+110111111|1111111 -> Parent 1 (Individual 2)
+111011111|1111111 -> Parent 2 (Individual 0)
+110111111|1111111 -> Child 4
+111011111|1111111 -> Child 5
+Crossover at chromosome 14:
+11011111111111|11 -> Parent 1 (Individual 2)
+11101111111011|11 -> Parent 2 (Individual 3)
+11011111111111|11 -> Child 6
+11101111111011|11 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  0  1  1  1  1  1  1  1  1 *0* 1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  0  1 *0* 1  1  1  1  1  1  1  1  1  1 *0*-> Child 1 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1 *0* 0  1  1  1  1  1  1  1  0  1  1  1  1 -> Child 3 Mutation at *_* 
+ 1  1 *1* 1 *0* 1  1  1  1  1 *0* 1  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1 *0* 0  1  1  1  1  1  1  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1110111111110111 -> Child 0 to Individual 0, Fitness: 14
+1101011111111110 -> Child 1 to Individual 1, Fitness: 13
+1110111110111111 -> Child 2 to Individual 2, Fitness: 14
+1100111111101111 -> Child 3 to Individual 3, Fitness: 13
+1111011111011111 -> Child 4 to Individual 4, Fitness: 14
+1100111111111111 -> Child 5 to Individual 5, Fitness: 14
+1101111111111111 -> Child 6 to Individual 6, Fitness: 15
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 13 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 12:
+110011111111|1111 -> Parent 1 (Individual 5)
+110011111111|1111 -> Parent 2 (Individual 5)
+110011111111|1111 -> Child 0
+110011111111|1111 -> Child 1
+Crossover at chromosome 1:
+1|101111111111111 -> Parent 1 (Individual 6)
+1|101111111111111 -> Parent 2 (Individual 6)
+1|101111111111111 -> Child 2
+1|101111111111111 -> Child 3
+Crossover at chromosome 9:
+110111111|1111111 -> Parent 1 (Individual 6)
+110111111|1111111 -> Parent 2 (Individual 6)
+110111111|1111111 -> Child 4
+110111111|1111111 -> Child 5
+Crossover at chromosome 15:
+111011111011111|1 -> Parent 1 (Individual 2)
+111011111110111|1 -> Parent 2 (Individual 7)
+111011111011111|1 -> Child 6
+111011111110111|1 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1 *1* 0  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 1 Mutation at *_* 
+*0* 1  0  1  1 *0* 1  1  1  1  1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1  0  1  1 *0* 1  1 *0* 1  1  1  1  1  1  1 -> Child 3 Mutation at *_* 
+ 1 *0* 0  1 *0* 1  1  1  1  1  1  1  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 1  1  1  0  1  1 *0* 1  1  0  1  1  1 *0* 1  1 -> Child 6 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  0  1  1  1  1 
+Assigning next generation (Verbose)
+1100111111111111 -> Child 0 to Individual 0, Fitness: 14
+1110111110111111 -> Child 1 to Individual 1, Fitness: 14
+0101101111111111 -> Child 2 to Individual 2, Fitness: 13
+1101101101111111 -> Child 3 to Individual 3, Fitness: 13
+1001011111111111 -> Child 4 to Individual 4, Fitness: 13
+1101111111111111 -> Child 5 to Individual 5, Fitness: 15
+1110110110111011 -> Child 6 to Individual 6, Fitness: 12
+1110111111101111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 14 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 11:
+11001111111|11111 -> Parent 1 (Individual 0)
+11001111111|11111 -> Parent 2 (Individual 0)
+11001111111|11111 -> Child 0
+11001111111|11111 -> Child 1
+Crossover at chromosome 11:
+11011111111|11111 -> Parent 1 (Individual 5)
+11011111111|11111 -> Parent 2 (Individual 5)
+11011111111|11111 -> Child 2
+11011111111|11111 -> Child 3
+Crossover at chromosome 5:
+11011|11111111111 -> Parent 1 (Individual 5)
+11101|11111101111 -> Parent 2 (Individual 7)
+11011|11111101111 -> Child 4
+11101|11111111111 -> Child 5
+Crossover at chromosome 9:
+111011111|1101111 -> Parent 1 (Individual 7)
+111011111|0111111 -> Parent 2 (Individual 1)
+111011111|0111111 -> Child 6
+111011111|1101111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  0  0  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  0  0  1  1  1  1  1  1  1  1  1 *0* 1  1 -> Child 1 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1 *0* 1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1 *0* 0  1  1  1  1  1  1  1  1  1  1  1 *0* 1 -> Child 3 Mutation at *_* 
+*0* 1  0  1 *0* 1  1  1  1  1  1  0  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  1  1 *0* 1  1 *0*-> Child 5 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  0  1  1  1  1  1  1 
+ 1  1  1  0  1 *0* 1  1  1  1  1  0  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1100111110111111 -> Child 0 to Individual 0, Fitness: 13
+1100111111111011 -> Child 1 to Individual 1, Fitness: 13
+1101111111011111 -> Child 2 to Individual 2, Fitness: 14
+1001111111111101 -> Child 3 to Individual 3, Fitness: 13
+0101011111101111 -> Child 4 to Individual 4, Fitness: 12
+1110111111110110 -> Child 5 to Individual 5, Fitness: 13
+1110111110111111 -> Child 6 to Individual 6, Fitness: 14
+1110101111101111 -> Child 7 to Individual 7, Fitness: 13
+ ------------ Generation: 15 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 11:
+11101111111|10110 -> Parent 1 (Individual 5)
+11011111110|11111 -> Parent 2 (Individual 2)
+11101111111|11111 -> Child 0
+11011111110|10110 -> Child 1
+Crossover at chromosome 8:
+10011111|11111101 -> Parent 1 (Individual 3)
+11001111|11111011 -> Parent 2 (Individual 1)
+10011111|11111011 -> Child 2
+11001111|11111101 -> Child 3
+Crossover at chromosome 7:
+1101111|111011111 -> Parent 1 (Individual 2)
+1110111|111110110 -> Parent 2 (Individual 5)
+1101111|111110110 -> Child 4
+1110111|111011111 -> Child 5
+Crossover at chromosome 15:
+100111111111110|1 -> Parent 1 (Individual 3)
+111011111011111|1 -> Parent 2 (Individual 6)
+100111111111110|1 -> Child 6
+111011111011111|0 -> Child 7
+Running Mutate (Verbose)
+ 1  1 *0* 0  1  1  1  1  1  1  1  1  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1  0  1  0  1  1  0 
+ 1  0  0  1  1  1  1  1  1  1  1  1  1  0  1 *0*-> Child 2 Mutation at *_* 
+ 1  1  0 *1* 1  1  1  1  1 *0* 1  1  1  1  0  1 -> Child 3 Mutation at *_* 
+ 1  1  0  1  1  1  1  1  1  1 *0* 1  0  1  1  0 -> Child 4 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  1  0  1  1  1  1  1 
+ 1  0  0  1  1  1  1  1  1  1  1  1  1  1  0  1 
+ 1  1  1  0  1  1  1  1  1  0  1  1  1  1  1  1 
+Assigning next generation (Verbose)
+1100111111111111 -> Child 0 to Individual 0, Fitness: 14
+1101111111010110 -> Child 1 to Individual 1, Fitness: 12
+1001111111111010 -> Child 2 to Individual 2, Fitness: 12
+1101111110111101 -> Child 3 to Individual 3, Fitness: 13
+1101111111010110 -> Child 4 to Individual 4, Fitness: 12
+1110111111011111 -> Child 5 to Individual 5, Fitness: 14
+1001111111111101 -> Child 6 to Individual 6, Fitness: 13
+1110111110111111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 16 Best Fitness: 14 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 0:
+|1110111110111111 -> Parent 1 (Individual 7)
+|1110111111011111 -> Parent 2 (Individual 5)
+|1110111111011111 -> Child 0
+|1110111110111111 -> Child 1
+Crossover at chromosome 9:
+110111111|0111101 -> Parent 1 (Individual 3)
+110011111|1111111 -> Parent 2 (Individual 0)
+110111111|1111111 -> Child 2
+110011111|0111101 -> Child 3
+Crossover at chromosome 4:
+1110|111110111111 -> Parent 1 (Individual 7)
+1100|111111111111 -> Parent 2 (Individual 0)
+1110|111111111111 -> Child 4
+1100|111110111111 -> Child 5
+Crossover at chromosome 15:
+111011111011111|1 -> Parent 1 (Individual 7)
+110111111011110|1 -> Parent 2 (Individual 3)
+111011111011111|1 -> Child 6
+110111111011110|1 -> Child 7
+Running Mutate (Verbose)
+*0* 1  1 *1* 1 *0* 1  1  1  1  0  1  1  1  1  1 -> Child 0 Mutation at *_* 
+ 1  1  1  0  1  1  1  1  1  0  1  1  1  1  1 *0*-> Child 1 Mutation at *_* 
+ 1  1 *1* 1  1  1  1  1  1 *0* 1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1 *0* 0  0  1  1  1  1  1  0  1  1  1 *0* 0  1 -> Child 3 Mutation at *_* 
+ 1  1 *0* 0  1  1  1  1  1  1  1  1  1  1  1  1 -> Child 4 Mutation at *_* 
+ 1 *0* 0  0  1  1  1  1  1  0  1  1  1  1  1  1 -> Child 5 Mutation at *_* 
+*0* 1  1  0  1  1 *0* 1  1  0  1  1  1 *0* 1  1 -> Child 6 Mutation at *_* 
+*0* 1  0 *0* 1  1  1  1  1  0  1  1  1  1  0  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+0111101111011111 -> Child 0 to Individual 0, Fitness: 13
+1110111110111110 -> Child 1 to Individual 1, Fitness: 13
+1111111110111111 -> Child 2 to Individual 2, Fitness: 15
+1000111110111001 -> Child 3 to Individual 3, Fitness: 10
+1100111111111111 -> Child 4 to Individual 4, Fitness: 14
+1000111110111111 -> Child 5 to Individual 5, Fitness: 12
+0110110110111011 -> Child 6 to Individual 6, Fitness: 11
+0100111110111101 -> Child 7 to Individual 7, Fitness: 11
+ ------------ Generation: 17 Best Fitness: 15 --------------
+Running Crossover (Verbose)
+Crossover at chromosome 2:
+11|10111110111110 -> Parent 1 (Individual 1)
+11|11111110111111 -> Parent 2 (Individual 2)
+11|11111110111111 -> Child 0
+11|10111110111110 -> Child 1
+Crossover at chromosome 6:
+011110|1111011111 -> Parent 1 (Individual 0)
+111111|1110111111 -> Parent 2 (Individual 2)
+011110|1110111111 -> Child 2
+111111|1111011111 -> Child 3
+Crossover at chromosome 5:
+11001|11111111111 -> Parent 1 (Individual 4)
+11111|11110111111 -> Parent 2 (Individual 2)
+11001|11110111111 -> Child 4
+11111|11111111111 -> Child 5
+Crossover at chromosome 12:
+011110111101|1111 -> Parent 1 (Individual 0)
+111011111011|1110 -> Parent 2 (Individual 1)
+011110111101|1110 -> Child 6
+111011111011|1111 -> Child 7
+Running Mutate (Verbose)
+ 1  1  1  1  1  1  1  1  1  0  1  1  1  1  1  1 
+ 1  1  1  0  1 *0* 1  1  1  0  1  1  1  1  1  0 -> Child 1 Mutation at *_* 
+ 0  1 *0* 1  1  0  1  1  1 *1* 1  1  1  1  1  1 -> Child 2 Mutation at *_* 
+ 1  1  1  1  1  1  1  1  1  1 *1* 1 *0* 1  1  1 -> Child 3 Mutation at *_* 
+ 1  1  0  0  1  1  1  1  1  0  1  1  1  1  1  1 
+ 1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1 
+ 0  1  1  1  1  0  1  1  1  1  0  1  1  1  1  0 
+ 1  1  1 *1* 1 *0* 1  1  1  0  1  1  1  1  1  1 -> Child 7 Mutation at *_* 
+Assigning next generation (Verbose)
+1111111110111111 -> Child 0 to Individual 0, Fitness: 15
+1110101110111110 -> Child 1 to Individual 1, Fitness: 12
+0101101111111111 -> Child 2 to Individual 2, Fitness: 13
+1111111111110111 -> Child 3 to Individual 3, Fitness: 15
+1100111110111111 -> Child 4 to Individual 4, Fitness: 13
+1111111111111111 -> Child 5 to Individual 5, Fitness: 16
+0111101111011110 -> Child 6 to Individual 6, Fitness: 12
+1111101110111111 -> Child 7 to Individual 7, Fitness: 14
+ ------------ Generation: 18 Best Fitness: 16 --------------
+Runtime (microseconds): 3135

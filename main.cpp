@@ -1,38 +1,49 @@
 #include <iostream>
 #include <stdlib.h>
 #include <chrono>
+#include "functions.h" 
 
-#include "functions.h"
+//######################################################################################
+//####                                                                              ####
+//####                               User Input (macros)                            ####
+//####                                                                              ####
+//######################################################################################
 
-#define n 1024               // Chromosome size
-#define m 100               // Population size
-#define seed 42              // #define seed
-#define maxgenerations 2000  // Maximum number of generations (while Loop limit)
-#define t 2                  // Tournament size
+#define n 16                    // Chromosome size (number of genes per individual).
+#define m 8                     // Population size (number of individuals).
+#define seed 42                 // Psuedorandom number generator seed (std:srand(seed)).
+#define maxgenerations 2000     // Maximum number of generations (while loop limit).
+#define t 2                     // Tournament size (parents competing for selection).
+#define verbose true            // Verbose output (cout) for verification.
+#define printfitness false      // Best fitness per generation output (cout).
 
+//######################################################################################
+//####                                                                              ####
+//####                         DO NOT MODIFY BELOW THIS LINE                        ####
+//####                                                                              ####
+//######################################################################################
 
-bool verbose = false;
-bool printfitness = true;
-
+//  p[m][n] - Array to store population with m individuals with chromosome size n.
 int p[m][n];
+//  q[m][n] - Array to store m children with chromosome size n.                 
 int q[m][n];
-
+//  best - Best (highest) fitness of current generation.
 int best;
+//  generation - While loop counter. Initialise first generation (generation 0).
 int generation = 0;
+//  fitness[maxgenerations] - Array to store best (highest) fitness per generation.
 int fitness[maxgenerations];
 
-
-int main(int argc, char *argv[])
+int main()
 {
     auto start = std::chrono::high_resolution_clock::now();
-    int seed_rand = time(NULL);
-    std::cout << seed_rand << std::endl;
-    std::srand(seed_rand);
+
+    std::srand(seed);
   
     if (verbose)
     {
-        RandomPopulationVerbose((int *)p, n, m);
-        best = MaxFitness((int *)p, n, m);
+        RandomPopulation((int *)p, n, m);
+        best = MaxFitnessVerbose((int *)p, n, m);
 
         while ((best != n) && (generation < maxgenerations))
         {
